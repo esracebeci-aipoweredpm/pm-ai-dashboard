@@ -20,6 +20,11 @@ from jinja2 import Environment, FileSystemLoader
 
 ROOT = Path(__file__).resolve().parent.parent
 
+TURKISH_MONTHS = [
+    "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+    "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık",
+]
+
 
 def strip_tags(html: str) -> str:
     return re.sub(r"<[^>]+>", "", html)
@@ -40,6 +45,8 @@ def theme_highlights(themes, limit=3):
 def build_archive():
     weeks = []
     weeks_dir = ROOT / "weeks"
+    current_month_name = ""
+    current_year = ""
     for week_dir in sorted(weeks_dir.iterdir(), reverse=True):
         data_path = week_dir / "data.json"
         if not data_path.exists():
@@ -49,6 +56,14 @@ def build_archive():
 
         total_sources = sum(len(ch["cards"]) for ch in data["channels"])
         themes = data.get("themes", [])
+
+        if not weeks:
+            # En yeni hafta (klasör adı YYYY-MM-DD_YYYY-MM-DD formatında,
+            # baştaki tarih haftanın ilk günü) — arşiv başlığındaki
+            # ay/yıl buradan otomatik türetilir.
+            year_str, month_str, _ = week_dir.name.split("_")[0].split("-")
+            current_month_name = TURKISH_MONTHS[int(month_str) - 1]
+            current_year = year_str
 
         weeks.append({
             "folder": week_dir.name,
@@ -64,7 +79,11 @@ def build_archive():
 
     env = Environment(loader=FileSystemLoader(str(ROOT / "templates")))
     template = env.get_template("archive-template.html.j2")
-    html = template.render(weeks=weeks)
+    html = template.render(
+        weeks=weeks,
+        current_month_name=current_month_name,
+        current_year=current_year,
+    )
 
     out_path = ROOT / "index.html"
     with open(out_path, "w", encoding="utf-8") as f:
