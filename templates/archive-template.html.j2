@@ -30,7 +30,11 @@
         <span class="score-badge s5">{{ week.total_sources }} kaynak</span>
       </div>
       <div class="card-title">{{ week.date_range_title }}</div>
-      <p class="card-summary">{{ week.preview }}</p>
+      <ul class="theme-list">
+{%- for h in week.theme_highlights %}
+        <li>{{ h }}</li>
+{%- endfor %}
+      </ul>
       <span class="card-action">Haftaya git →</span>
     </a>
 {%- endfor %}

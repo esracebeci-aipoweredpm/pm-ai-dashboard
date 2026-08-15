@@ -25,6 +25,18 @@ def strip_tags(html: str) -> str:
     return re.sub(r"<[^>]+>", "", html)
 
 
+def theme_highlights(themes, limit=3):
+    """Her temadan sadece <strong> içindeki başlığı çıkarır, başındaki
+    '1. ' gibi numarayı temizler. Arşiv kartında maddeleme için kullanılır."""
+    highlights = []
+    for theme in themes[:limit]:
+        match = re.search(r"<strong>(.*?)</strong>", theme)
+        text = match.group(1) if match else strip_tags(theme)
+        text = re.sub(r"^\d+\.\s*", "", text).strip()
+        highlights.append(text)
+    return highlights
+
+
 def build_archive():
     weeks = []
     weeks_dir = ROOT / "weeks"
@@ -37,14 +49,13 @@ def build_archive():
 
         total_sources = sum(len(ch["cards"]) for ch in data["channels"])
         themes = data.get("themes", [])
-        preview = strip_tags(themes[0]) if themes else ""
 
         weeks.append({
             "folder": week_dir.name,
             "week_label": data["week_label"],
             "date_range_title": data["date_range_title"],
             "total_sources": total_sources,
-            "preview": preview,
+            "theme_highlights": theme_highlights(themes),
         })
 
     if not weeks:
