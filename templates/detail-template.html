@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>{{BAŞLIK}} | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">{{KAYNAK_ADI}} · {{TARİH}}</div>
+  <h1>{{BAŞLIK}}</h1>
+  <p class="meta">Kaynak: <a href="{{URL}}" target="_blank">{{URL_LABEL}}</a> · {{SÜRE_VEYA_BOŞ_BIRAK}}</p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p><!-- Kaynağın ana argümanı, 2-4 cümle --></p>
+  </div>
+  <div class="card">
+    <div class="card-title"><!-- Alt başlık, örn. "Kurs içeriği" / "Makale yapısı" --></div>
+    <p><!-- Detay --></p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p><!-- PM için doğrudan transfer edilebilir sonuç --></p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <!-- Her önemli nokta için bir ce-block. 3-5 blok önerilir. -->
+  <div class="ce-block">
+    <div class="ce-title">1. <!-- Nokta başlığı --></div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div><!-- Sebep --></div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div><!-- Sonuç + genel PM bağlamı --></div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;"><!-- Kısa giriş cümlesi --></p>
+  <!-- Her senaryo için bir .card. 3-4 senaryo önerilir. -->
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. <!-- Senaryo başlığı --></div>
+    <p><!-- Senaryo açıklaması --></p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> <!-- KVKK/BG önkoşulu varsa belirt --></div>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

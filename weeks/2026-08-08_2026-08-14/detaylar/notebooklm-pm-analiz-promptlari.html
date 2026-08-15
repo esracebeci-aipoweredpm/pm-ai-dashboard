@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>PM'in Kendi Analiz İşinde NotebookLM'i Kullanma Kalıpları | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">LearnAIWithMe × Gencay · 09 Ağustos 2026</div>
+  <h1>PM'in Kendi Analiz İşinde <em>NotebookLM</em> Kullanma Kalıpları</h1>
+  <p class="meta">Kaynak: <a href="https://substack.com/home/post/p-209496227" target="_blank">substack.com/home/post/p-209496227</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Gencay'ın yazısı, Google'ın NotebookLM'ini (Gemini Notebook) ham dokümanları yapılandırılmış analiz çıktısına çeviren bir "analist" gibi kullanmayı gösteriyor. Orijinal örnekler muhasebe/fatura verisi üzerinden kurulu, ama altta yatan dört kalıp — kaynakları otomatik toplama (agentic research / URL vacuum), hesaplamayı bir kod sandbox'ında çalıştırma, anomali/örüntü tespiti ve chat üzerinden doğrudan düzenlenebilir çıktı üretme (chat-to-deliverable) — bir PM'in gündelik analiz işine doğrudan taşınabilir. Buradaki asıl fikir, PM'in "bu veriyi kim analiz edecek" diye bir analist beklemesi gerekmeden, kendi ham verisini (ticket, transkript, rakip dokümanı, anket) doğrudan yapılandırılmış bir çıktıya dönüştürebilmesi.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Orijinal örnekten PM analoğu</div>
+    <p>Yazıdaki "invoice test" (fatura verisinden KPI dashboard'u) bir PM için "destek ticket'larından haftalık sorun-kategorisi dashboard'u" haline geliyor; "anomaly hunt" (anormal işlem tespiti) "kullanıcı davranış logunda beklenmedik düşüş/artış tespiti" haline geliyor; "chat to deliverable" (sohbetten PowerPoint'e) "bir araştırma bulgusunu doğrudan stakeholder sunumuna çevirme" haline geliyor. Format aynı kalıyor, girdi değişiyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>PM'in elindeki dağınık, yapılandırılmamış metin yığınını (ticket'lar, transkriptler, dokümanlar) bir analistin/veri ekibinin sırasını beklemeden kendi başına yapılandırılmış bir çıktıya (dashboard, anomali raporu, sunum) çevirebilmesi, araştırma-karar döngüsünü kısaltan tekrarlanabilir bir araç kalıbı sunuyor. Bu, ayrı bir analiz projesi açmak yerine, PM'in kendi iş akışına gömülü bir adım olarak kullanılabilir.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Agentic research / URL vacuum, kaynak toplama süresini kısaltıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir PM genellikle bir konuyu araştırırken ilgili dokümanları, geçmiş raporları ve dış kaynakları elle tek tek bulup notebook'a eklemek zorunda kalıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Agentic research özelliği ilgili kaynakları otomatik tarayıp topluyor; PM'in ilk adımı "hangi dokümanlar ilgili" sorusunu elle cevaplamak yerine bu taramayı gözden geçirip düzeltmek oluyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Kod sandbox'ında hesaplama, insan hatasını ve tekrar işi ortadan kaldırıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir PM'in Excel'de elle yaptığı trend/oran hesaplamaları hem zaman alıyor hem de formül hatasına açık.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Hesaplamanın bir kod sandbox'ında çalıştırılması, aynı hesaplamanın veri değiştiğinde yeniden ve tutarlı şekilde çalıştırılabilmesini sağlıyor — PM her seferinde formülü elle kurmak zorunda kalmıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Anomali/örüntü tespiti, manuel tarama ihtiyacını azaltıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Büyük bir ticket/log/anket veri setinde "dikkat çeken bir şey var mı" sorusunun cevabı genellikle satır satır manuel taramayla bulunuyor, bu da büyük veri setlerinde pratik değil.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Bir "anomaly hunt" promptu, beklenmedik örüntüleri otomatik işaretleyip PM'in dikkatini doğrudan gerçekten inceleme gerektiren noktalara yönlendiriyor; "hiçbir anormallik yok" sonucu da kendi başına bir bilgi.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Chat-to-deliverable, analizi bir ara adım olmaktan çıkarıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir sohbette ortaya çıkan bulgu, genellikle önce not alınıp sonra ayrı bir araçta (PowerPoint, Excel) yeniden formatlanmak zorunda kalıyor; bu format geçişi zaman ve bağlam kaybına yol açıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Sohbetten doğrudan düzenlenebilir bir çıktı (sunum, dashboard) üretmek, PM'in bulguyu bir stakeholder'a sunmak için ayrı bir formatlama adımına ihtiyaç duymamasını sağlıyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Orijinal muhasebe/fatura örneklerinin bir PM'in kendi analiz işine uyarlanmış hâli, dört somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Destek ticket'larını haftalık sorun-kategorisi dashboard'una çevirme</div>
+    <p>Bir haftalık destek ticket'ı dökümü notebook'a yüklenir; "bu ticket'ları kategoriye, sıklığa ve trende göre bir dashboard'a dönüştür" promtuyla PM elle Excel'de gruplama yapmadan bir KPI görünümü elde eder.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Kullanıcı görüşme transkriptlerinde anomali/tema taraması</div>
+    <p>Birden fazla kullanıcı görüşmesinin transkripti yüklenip "beklenmedik veya tekrar eden bir tema var mı" sorusu sorulur; sonuç, PM'in transkriptleri satır satır okumadan öncelikli temaları görmesini sağlar.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Görüşme transkriptlerinin KVKK/aydınlatma metnine uygun şekilde anonimleştirilmiş veya paylaşım izni alınmış olması.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Rakip/pazar dokümanlarını agentic research ile sentezleme</div>
+    <p>Birkaç rakip ürün sayfası/duyuru linki verilip ilgili ek kaynakların otomatik toplanması istenir; PM tek tek sekme açıp okumak yerine toplanan kaynakların özetiyle başlar.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Bir bulguyu chat içinde doğrudan sunuma çevirme</div>
+    <p>Bir analiz sohbetinde ortaya çıkan bulgu, "bunu stakeholder'a gönderebileceğim bir sunuma çevir" promtuyla doğrudan düzenlenebilir bir slayt destesine dönüştürülür; ayrı bir sunum hazırlama adımına gerek kalmaz.</p>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI x PM Haftalık Bülten — Tüm Haftalar</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">AI x PM Haftalık Bülten</div>
+  <h1>Tüm <em>Haftalar</em></h1>
+  <div class="meta">
+    <span class="week-pill">Arşiv</span>
+    <div class="stats">
+      <span class="stat"><strong>{{ weeks|length }}</strong> hafta</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="active" id="archive">
+  <div class="section-title">Geçmiş <span>Haftalar</span></div>
+  <div class="cards-grid">
+{%- for week in weeks %}
+    <a class="card score-5 clickable" href="weeks/{{ week.folder }}/index.html">
+      <div class="card-header">
+        <div class="card-source">{{ week.week_label }}</div>
+        <span class="score-badge s5">{{ week.total_sources }} kaynak</span>
+      </div>
+      <div class="card-title">{{ week.date_range_title }}</div>
+      <p class="card-summary">{{ week.preview }}</p>
+      <span class="card-action">Haftaya git →</span>
+    </a>
+{%- endfor %}
+  </div>
+</section>
+</main>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

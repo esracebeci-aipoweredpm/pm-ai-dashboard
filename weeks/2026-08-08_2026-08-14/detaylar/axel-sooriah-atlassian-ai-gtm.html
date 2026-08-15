@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Ürün Ekipleri İçin AI Destekli GTM | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Product School × Axel Sooriah (PM & AI Evangelist, Atlassian) · 04 Ağustos 2026</div>
+  <h1>Ürün Ekipleri İçin AI Destekli <em>GTM</em></h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=3o2C74iWez4" target="_blank">youtube.com/watch?v=3o2C74iWez4</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Atlassian'da PM & AI Evangelist olan Axel Sooriah, GTM (go-to-market) çalışmalarında AI'ı doğru yere yerleştirmenin anahtarının "skill" ile "agent" arasındaki farkı netleştirmek olduğunu savunuyor: bir skill, tek seferlik veya talep üzerine çalıştırılan, insanın tetiklediği bir yetenek; bir agent ise sürekli/arka planda çalışan, kendi başına tetiklenen bir sistem. Bu ayrımı yapmadan her fikri doğrudan "otomatikleştirilecek bir şey" olarak ele almak, AI'ın gerçek değer kattığı yerlerle sadece ek bakım yükü yarattığı yerleri birbirine karıştırıyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Kendi iş akışlarından iki örnek</div>
+    <p>Sooriah, Dia, Rovo ve Cursor'ı kullanarak kurduğu gerçek iş akışlarını gösteriyor: (1) günün önceliklerini, takvimini ve açık konularını tek bir özette toplayan, günü başlamadan önce çalışan bir "sabah brifingi" skill'i; (2) başlangıçta tek seferlik bir analiz olarak yazdığı bir "webinar performansı" skill'ini, talep geldiğinde otomatik çalışan bir Slack agent'ına dönüştürmesi. İkinci örnek, bir skill'in ne zaman agent'a "terfi ettirilmeye" değer olduğunu somutluyor: kullanım sıklığı ve talep tekrarı arttıkça.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Bir GTM/otomasyon fikri değerlendirilirken önce "bu bir skill mi, bir agent mi olmalı?" sorusu sorulmalı — ve bu karar, işin ne sıklıkla tekrarlandığına ve ne kadar insan denetimi gerektirdiğine göre verilmeli. Her fikri doğrudan sürekli çalışan bir agent'a dönüştürmek gereksiz bakım yükü yaratabilir; her tekrarlayan işi elle/tek seferlik skill olarak bırakmak da zaman kaybettirir.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Skill/agent ayrımı yapılmadan otomasyon kararı verilemez</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>"AI ile otomatikleştirelim" fikri genellikle skill (talep üzerine, insan tetikli) ile agent (sürekli, kendi başına tetiklenen) arasındaki farkı ayırt etmeden ortaya atılıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Bu ayrımı önceden yapmak, bir işin gerçekten sürekli/arka planda mı çalışması gerektiğini yoksa tek seferlik bir yardımın mı yeterli olduğunu netleştiriyor; yanlış kategoriye yatırım yapmayı önlüyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Bir skill, kullanım sıklığı arttıkça agent'a terfi edebilir</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Webinar-performans analizi başlangıçta nadiren yapılan, tek seferlik bir iş olarak tasarlanmıştı; ama talep sıklığı arttıkça her seferinde manuel tetiklemek zaman kaybına dönüştü.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Sooriah bu skill'i talep üzerine otomatik çalışan bir Slack agent'ına dönüştürdü — kullanım deseni değiştikçe otomasyon seviyesinin de değişebileceğini gösteren somut bir örnek.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Sabah brifingi gibi düşük riskli işler, skill seviyesinde kalabilir</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Günlük öncelik/takvim özeti gibi işler kişisel, düşük riskli ve her gün zaten insan tarafından gözden geçiriliyor; sürekli çalışan bir agent'a dönüştürmenin ek bir faydası yok.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Bu tür işler talep üzerine çalışan bir skill olarak bırakılıyor — her otomasyonun agent seviyesine çıkarılması gerekmediğinin bir örneği.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Skill/agent çerçevesinin bir PM'in günlük GTM ve otomasyon kararlarına uyarlanabileceği üç somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Yeni bir otomasyon fikrini skill/agent kontrolünden geçirme</div>
+    <p>Bir otomasyon fikri ortaya çıktığında önce "bu iş ne sıklıkla tekrarlanıyor, ne kadar insan denetimi gerekiyor" soruları sorulur; düşük sıklık/yüksek denetim gerektiren işler skill, yüksek sıklık/düşük denetim gerektiren işler agent olarak tasarlanır.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Kişisel bir günlük özet skill'i kurma</div>
+    <p>Önceliklerin, takvimin ve açık konuların tek bir özette toplandığı, gün başlamadan önce çalışan bir kişisel brifing skill'i kurulur; bu, karmaşık bir agent altyapısı gerektirmeden düşük maliyetli bir başlangıç noktası olur.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Tekrarlayan analiz taleplerini agent'a terfi ettirme</div>
+    <p>Başlangıçta tek seferlik yapılan bir analiz (ör. bir kampanya/webinar performans raporu) zamanla sık talep edilmeye başladığında, bu analiz talep üzerine otomatik çalışan bir Slack/chat agent'ına dönüştürülür.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Agent'ın erişeceği verinin (kampanya/performans verisi) güvenlik ve erişim izinlerinin önceden tanımlanmış olması.</div>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

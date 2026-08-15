@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>AI Ürünlerinde Kullanıcı Güveni İçin Bir Çerçeve | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Product School × Stephanie J. Neill (Head of Product, Stripe) · 05 Ağustos 2026</div>
+  <h1>AI Ürünlerinde Kullanıcı Güveni İçin Bir <em>Çerçeve</em></h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=7-u4483zm6A" target="_blank">youtube.com/watch?v=7-u4483zm6A</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Stripe'ta Head of Product olan Stephanie J. Neill, AI ürünlerinde kullanıcı güvenini kazanmanın yolunun modeli "daha akıllı" yapmak olmadığını savunuyor. Ona göre asıl kaldıraç, sistemi daha öngörülebilir ve şeffaf hale getirmek: yanıtları belirli bir politika/kaynak kümesine dayandırmak, kaynak göstermeyi zorunlu kılmak, her çıktıya bir güven skoru eklemek ve düşük skorlu durumları otomatik olarak insan incelemesine yönlendirmek. Bu dört kalıp, AI'ı bir kerelik demo şaşkınlığından çıkarıp güvenilir/tekrar tekrar kullanılan bir araca dönüştürüyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Dört somut kalıp</div>
+    <p>Neill'in çerçevesi dört tekrarlanabilir üründesenine ayrılıyor: (1) yanıtları bir <strong>policy dosyasına</strong> (onaylı kaynak/kural kümesi) dayandırmak, böylece model kendi eğitim verisinden serbestçe "halüsinasyon" üretmek yerine sınırlı ve denetlenebilir bir kaynağa bağlı kalır; (2) her yanıtta <strong>kaynak gösterimini (citation)</strong> zorunlu kılmak, kullanıcının iddiayı kaynağına kadar takip edebilmesini sağlamak; (3) her çıktıya bir <strong>güven skoru</strong> eklemek, sistemin kendi belirsizliğini açıkça ifade etmesi; (4) <strong>%70'in altındaki güven skorlarını</strong> otomatik olarak insan incelemesine yönlendirmek, düşük güvenilirlikli çıktıların kullanıcıya hiç görünmeden filtrelenmesi.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Bir AI özelliğinin yol haritası tartışmasını "modeli/promptu iyileştirelim" sorusundan "kullanıcı bu çıktıya neden güvenmeli?" sorusuna kaydırmak gerekiyor. Bu çerçeve, PM'lerin AI özelliği tasarımını ölçülebilir, denetlenebilir dört bileşene (kaynak sınırlama, citation, güven skoru, eşik-bazlı insan devri) ayırarak somut kabul kriterlerine ve metriklerine dönüştürmesini sağlıyor — "daha iyi model" gibi belirsiz bir hedef yerine.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Güven, model kapasitesinden çok arayüz kalıbı meselesi</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Ekipler AI ürünlerinde güvensizlik sorununu genellikle "daha büyük/daha yeni model" ile çözmeye çalışıyor; ama kullanıcı güveni model skorlarından değil, çıktının denetlenebilir ve öngörülebilir olmasından geliyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>PM'ler model seçimine/tuning'e harcanan enerjinin bir kısmını, çıktının kullanıcı tarafından doğrulanabilir olmasını sağlayan ürün kalıplarına (kaynak gösterme, sınırlama, eşikleme) kaydırmalı.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Policy dosyasına dayalı yanıt, halüsinasyon riskini sınırlıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir modelin serbestçe ürettiği yanıt, eğitim verisindeki her şeyi kaynak alabildiği için öngörülemez ve denetlenmesi zor oluyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Yanıtı önceden onaylanmış bir politika/bilgi kümesine (policy file) bağlamak, modelin çıktı uzayını daraltıyor ve "neden bu cevabı verdi" sorusunun cevaplanabilir olmasını sağlıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Zorunlu citation, kullanıcıya doğrulama gücü veriyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Kullanıcılar bir AI yanıtının doğru olduğuna sadece "iyi yazılmış görünüyor" diye inanmak zorunda kaldığında, ilk hatada güven tamamen kayboluyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Her iddianın yanına kaynağını eklemek, kullanıcının iddiayı bağımsız olarak doğrulamasına imkan veriyor; bu da güveni "modele inanma"dan "kaynağı kontrol edebilme"ye taşıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Güven skoru, belirsizliği gizlemek yerine görünür kılıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>AI sistemleri genellikle her yanıtı aynı kesinlik tonuyla sunuyor; kullanıcı düşük güvenilirlikli bir çıktıyı da yüksek güvenilirlikli biriyle aynı şekilde okuyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Her yanıta açık bir güven skoru eklemek, kullanıcının çıktıya ne kadar ağırlık vermesi gerektiğini kendi başına ayarlamasını sağlıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">5. %70 eşiği — otomatik insan devri</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Düşük güvenilirlikli bir çıktının doğrudan kullanıcıya gitmesi, tek bir kötü deneyimle uzun süreli güveni geri dönülmez şekilde zedeleyebiliyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Güven skoru %70'in altında kalan çıktılar kullanıcıya hiç gösterilmeden bir insan incelemesine (human-in-the-loop) yönlendiriliyor; bu, hatanın kullanıcıya ulaşmadan yakalanmasını sağlayan somut bir güvenlik ağı.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Çerçevenin bir AI özelliği tasarım/kabul kriteri sürecine uyarlanabileceği dört somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. AI özelliği için kabul kriterlerini dört kalıba göre yazma</div>
+    <p>Bir AI özelliği tanımlanırken "model daha iyi olsun" gibi belirsiz hedef yerine dört somut kabul kriteri kullanılır: yanıt hangi policy kümesine dayanıyor, kaynak gösterimi zorunlu mu, güven skoru hesaplanıyor mu, düşük skorlu durumlar nereye yönleniyor.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Ürünün cevaplandırdığı sorular için önceden tanımlanmış/onaylı bir kaynak veya politika kümesinin var olması.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Düşük güven eşiğini insan inceleme kapasitesine göre kalibre etme</div>
+    <p>%70 gibi sabit bir eşik doğrudan kopyalanmadan önce, ekip kendi insan inceleme kapasitesine (kaç yanıtı günlük olarak inceleyebilecek bir ekip var) göre eşiği kalibre eder; eşik çok düşükse inceleme kuyruğu tıkanır, çok yüksekse riskli çıktılar kullanıcıya sızar.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Citation'ı ürün metriği olarak izleme</div>
+    <p>"Kaynağı tıklanan yanıt oranı" veya "kaynaksız/citation'sız gösterilen yanıt sayısı" gibi metrikler dashboard'a eklenir; bu, güven kalıbının sadece tasarım aşamasında değil, canlıda da uygulanıp uygulanmadığını izlemeyi sağlar.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Yeni bir AI özelliğini "trust kalıpları" checklist'iyle gözden geçirme</div>
+    <p>Bir özellik canlıya çıkmadan önce dört kalıp (kaynak sınırlama, citation, güven skoru, eşik-bazlı insan devri) tek tek gözden geçirilir; hangi kalıbın bilinçli olarak atlandığı ve nedeni ayrıca not edilir, böylece eksik güvenlik ağı sessizce unutulmaz.</p>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

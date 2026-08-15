@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Ürün Yaşam Döngüsünde AI Multiplayer İş Birliği | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Product School × Damir Dizdarević (Head of Product, Miro) · 05 Ağustos 2026</div>
+  <h1>Ürün Yaşam Döngüsünde AI <em>Multiplayer</em> İş Birliği</h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=YVafZodihik" target="_blank">youtube.com/watch?v=YVafZodihik</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Miro'da Head of Product olan Damir Dizdarević, 518 liderle yapılan bir Forrester araştırmasına dayanarak AI'ın beklenmedik bir yan etkisini gösteriyor: içerik/artifact üretimi hızlandıkça ekip hizasızlığı da büyüyüyor — "üretim ölçeklendi ama karar verme ölçeklenmedi". Herkes kendi AI aracıyla hızla taslak, doküman ve prototip üretebildiğinde, bu çıktıları bir arada değerlendirip ortak bir karara bağlamak asıl darboğaz haline geliyor. Çözüm olarak "agentic canvas" üzerinde birden fazla kişinin/ajanın aynı çalışma alanında eş zamanlı çalıştığı iki iş akışını canlı kuruyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">İki canlı iş akışı demosu</div>
+    <p>İlk akış, dağınık kullanıcı geri bildirimini (farklı kanallardan gelen ham yorumlar) tek bir agentic canvas'ta işleyip önceliklendirilmiş bir backlog, bir strateji dokümanı ve birden fazla prototip varyantına dönüştürüyor — hepsi aynı çalışma alanında, birbirine bağlı olarak. İkinci akış, farklı ekiplerin Slack'te dağınık şekilde paylaştığı durum güncellemelerini tarayıp tek, birleşik bir durum raporunda topluyor; böylece "her ekip kendi kanalında güncelleme yazıyor ama kimse tam resmi göremiyor" sorunu ortadan kalkıyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>AI yatırımının bir kısmı, "daha hızlı üretim" araçlarından "dağınık çıktıları hizalayan" araçlara kaymalı. Bir PM ekibi AI benimserken sadece "her rol kendi AI aracıyla daha hızlı üretiyor mu" sorusunu değil, "üretilen çıktılar birbirine bağlanıp tek bir karara nasıl indiriliyor" sorusunu da tasarlamalı — aksi halde hız artışı, senkronize olmayan daha fazla artifact biriktirmekle sonuçlanır.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Üretim hızı ile karar hızı ayrı eksenler</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>AI araçları her bir bireyin taslak/doküman/prototip üretme hızını artırıyor, ama bu çıktıları başkalarıyla birleştirip ortak bir karara varma süreci aynı hızda ilerlemiyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Forrester verisiyle desteklenen bu gözlem, "daha fazla AI aracı = daha hızlı ekip" varsayımını sorguluyor; asıl darboğaz artık üretim değil, dağınık çıktıların hizalanması.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Geri bildirimi tek akışta backlog + strateji + prototipe bağlama</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Kullanıcı geri bildirimi genellikle dağınık kanallarda toplanıyor ve backlog'a, strateji dokümanına, prototipe dönüştürülme süreçleri birbirinden kopuk, ayrı adımlar olarak yürütülüyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Bu üç çıktıyı (backlog, strateji dokümanı, prototip varyantları) aynı agentic canvas akışında birbirine bağlı üretmek, aralarındaki tutarsızlık riskini azaltıyor ve elle senkronize etme işini ortadan kaldırıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Durum raporlama, ekip başına değil sistem düzeyinde çözülüyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Her ekip kendi Slack kanalında durum paylaştığında, üst düzey karar vericiler tam resmi görmek için manuel olarak kanalları tarayıp özetlemek zorunda kalıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Dağınık güncellemeleri otomatik tarayıp birleşik bir rapora dönüştüren bir akış, bu manuel senkronizasyon işini ortadan kaldırıyor ve raporun her zaman güncel kalmasını sağlıyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Agentic canvas / multiplayer AI yaklaşımının bir PM organizasyonuna uyarlanabileceği üç somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Dağınık geri bildirimi tek akışta backlog'a bağlama</div>
+    <p>Farklı kanallardan (destek talepleri, satış notları, kullanıcı görüşmeleri) gelen ham geri bildirim, tek bir ortak çalışma alanında toplanıp otomatik olarak önceliklendirilmiş bir backlog ve strateji taslağına dönüştürülür; ekip elle kopyala-yapıştır yapmak zorunda kalmaz.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Ekipler arası durum güncellemelerini otomatik birleştirme</div>
+    <p>Birden fazla ekibin farklı kanallarda paylaştığı ilerleme güncellemeleri otomatik olarak taranıp tek bir üst düzey durum raporunda özetlenir; rapor manuel toplama beklemeden her an güncel kalır.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. AI yatırım kararına "hizalama" metriğini ekleme</div>
+    <p>Bir AI aracı/yatırımı değerlendirilirken sadece "bireysel üretkenliği ne kadar artırıyor" değil, "farklı kişilerin ürettiği çıktıları ortak bir karara indirmeyi ne kadar kolaylaştırıyor" sorusu da değerlendirme kriterine eklenir.</p>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

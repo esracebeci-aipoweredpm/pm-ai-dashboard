@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Bir OpenAI Mühendisi Codex + ChatGPT Work'le Nasıl Her Şeyi Otomatikleştiriyor | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">How I AI × Nick Baumann (OpenAI Developer Experience) · 03 Ağustos 2026</div>
+  <h1>Bir OpenAI Mühendisi <em>Codex + ChatGPT Work</em>'le Nasıl Her Şeyi Otomatikleştiriyor</h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=EgrI2rUmM48" target="_blank">youtube.com/watch?v=EgrI2rUmM48</a> · 41 dakika</p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>OpenAI'ın Developer Experience ekibinden Nick Baumann, ChatGPT Codex ve ChatGPT Work'ün son dönemde çıkan veya olgunlaşan özelliklerini canlı demolarla gösteriyor: ekranı okuyabilen yeni bir sesli arayüz ("orb"), ChatGPT Work'te mobilde arka planda çalışan Heartbeats otomasyon sistemi, tek bir promptla gerçek bir web sitesi yayına alan ChatGPT Sites ve kendi kişisel iş akışı olan otomatik UGC video kurgusu. Videonun ortak teması, sesli arayüz ile arka plan otomasyonunun birleşmesiyle chat arayüzünün artık tek seferlik soru-cevap aracı olmaktan çıkıp, hiçbir uygulama açılmadan çok adımlı gerçek dünya görevlerini uçtan uca yürütebilen bir asistana dönüşmesi.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Gösterilen özellikler</div>
+    <p>Baumann sırasıyla şunları canlı gösteriyor: (1) sesli bir konuşma içinde uçuş arama, otel rezervasyonu ve masraf raporu oluşturmayı Codex'e devretme; (2) ChatGPT Work mobilde Heartbeats'in arka planda durumu takip edip proaktif bildirim vermesi; (3) tek bir doğal dil promptundan gerçek, yayında bir web sitesi üretip deploy etme (ChatGPT Sites); (4) 50 ham video klibini ChatGPT'ye verip transkript çıkarttırma, en iyi anları seçtirme ve bir gecede bitmiş dikey video haline getirtme.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Asıl sinyal, büyük LLM sağlayıcılarının chat arayüzünü "soru sor, cevap al" modelinden "arka planda çalışan, çok adımlı görevleri devralan asistan" modeline taşıması. PM'ler için bunun iki doğrudan uzantısı var: (1) fikir doğrulama ve hızlı prototipleme için tek-promptla-canlı-deploy yeteneklerinin (ChatGPT Sites gibi) araç kutusuna girmesi, (2) rutin/idari işlerin (seyahat planlama, raporlama, içerik kurgusu gibi düşük karar-yoğunluklu ama çok adımlı görevler) sesli/arka plan otomasyonuna devredilebilir hale gelmesi — bu da hangi vendor'ların bu yönde ne kadar hızlı ilerlediğinin bir araç/yatırım sinyali olarak takip edilmesi gerektiği anlamına geliyor.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Ekran-farkında sesli arayüz ile çok adımlı görev delegasyonu</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Geleneksel sesli asistanlar yalnızca sesli soru-cevap yapıyor, ekrandaki bağlamı göremiyor ve çok adımlı görevlerde her adımda kullanıcıya geri dönmek zorunda kalıyordu.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Yeni "orb" arayüzü ekranı okuyarak bağlamı koruyor; Baumann demoda tek bir sesli konuşma içinde uçuş arama, otel rezervasyonu ve masraf raporu oluşturmayı hiçbir uygulamayı elle açmadan Codex'e devrediyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Heartbeats — arka planda proaktif kontrol</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>ChatGPT Work'te kullanıcılar bir görevi başlattıktan sonra sonucu görmek için uygulamaya geri dönüp manuel kontrol etmek zorundaydı.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Heartbeats, mobilde arka planda periyodik olarak durumu kontrol edip kullanıcıyı proaktif olarak bilgilendiriyor; Baumann bunu, zaten ChatGPT app'i kullanan insanlar için "en az kullanılan iş akışı" olarak tanımlıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Latency vs. intelligence dengesi</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Sesli etkileşimde model ne kadar yetenekli/akıllı olursa cevap süresi o kadar uzuyor, bu da doğal konuşma hissini bozuyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Baumann canlı demo sırasında bu gecikme-yetenek dengesini açıkça tartışıyor; sesli/ajan ürünler tasarlayan PM'ler için UX beklentisini kalibre eden somut bir referans noktası oluşturuyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. ChatGPT Sites — tek promptla canlı deploy</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir fikri hızlıca test edilebilir bir web sitesine dönüştürmek normalde tasarım, geliştirme ve deploy adımlarını, genellikle farklı araçları gerektiriyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>ChatGPT Sites, tek bir doğal dil promptundan gerçek, yayında bir siteyi uçtan uca üretip deploy ediyor; bu canlı olarak gösteriliyor ve prototipleme süresini dakikalara indiriyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">5. UGC video otomasyonu — 50 ham klipten bitmiş videoya</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Kullanıcı üretimi içerik (UGC) videolarını düzenlemek, en iyi anları seçmek için saatler süren manuel transkript inceleme ve kurgu gerektiriyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Baumann'ın kişisel iş akışı, 50 ham klibi ChatGPT'ye vererek transkriptleri çıkarttırıyor, en iyi anları seçtiriyor ve bir gecede bitmiş dikey video olarak kurgulattırıyor — düzenleme sürecini saatlerden "kuyruğa bırak, sabah teslim al" işine indiriyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Videodaki demoların bir PM'in kendi iş akışına veya araç değerlendirmesine uyarlanabileceği dört somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Rutin idari/lojistik işleri tek sesli oturumda devretme</div>
+    <p>Seyahat planlaması gibi çok adımlı ama düşük karar-yoğunluklu işler (uçuş arama, otel seçimi, masraf raporu doldurma) tek bir sesli konuşma içinde bir AI asistana devredilir; sonuç, arka planda çalışan bir bildirim mekanizmasıyla takip edilir, her adımda uygulamaya elle dönülmez.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Fikir doğrulama için "tek promptla canlı site" prototiplemesi</div>
+    <p>Bir özellik veya kampanya fikri paydaşlara ya da kullanıcı testine sunulmadan önce, tek bir promptla gerçek, tıklanabilir bir web sayfası üretilip yayına alınır; tasarım/geliştirme ekibi meşgul edilmeden hızlı bir doğrulama turu yapılır.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Vendor/araç yol haritasını "orb" ve "Heartbeats" gibi sinyallerle takip etme</div>
+    <p>Kendi ürününde sesli arayüz veya arka plan otomasyonu planlanıyorsa, büyük LLM sağlayıcılarının bu alanda hangi UX kalıplarını (ekran-farkında sesli asistan, proaktif arka plan kontrolü) olgunlaştırdığı referans alınarak roadmap kalibre edilir.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. İçerik/pazarlama üretim hattını toplu-işleme mantığıyla otomatikleştirme</div>
+    <p>UGC video kurgusu örneğindeki gibi, tekrarlayan ama yargı gerektiren bir üretim adımı (seçme, transkript çıkarma, kurgu) toplu halde bir AI'a devredilir; insan müdahalesi yalnızca son onay adımına indirgenir.</p>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI x PM Haftalık Bülten — Hafta 2 (8-14 Ağustos 2026)</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+
+<header>
+  <a class="eyebrow" href="../../index.html">← AI x PM Haftalık Bülten</a>
+  <h1>Hafta 2 — <em>8-14 Ağustos 2026</em></h1>
+  <div class="meta">
+    <span class="week-pill">Ağustos 2026 / Hafta 2</span>
+    <div class="stats">
+      <span class="stat"><strong>11</strong> kaynak</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-chip active" onclick="showSection('overview', this)">Genel Bakış</div>
+  <div class="nav-chip" onclick="showSection('youtube', this)">YouTube <span class="count">8</span></div>
+  <div class="nav-chip" onclick="showSection('substack', this)">Substack <span class="count">3</span></div>
+</nav>
+
+<main>
+
+<!-- OVERVIEW -->
+<section id="overview" class="active">
+  <div class="section-title">Genel <span>Bakış</span></div>
+
+  <div class="week-summary">
+    <h3>Bu haftanın baskın temaları</h3>
+    <p><strong>1. Trust, model kalitesinden çok arayüz kalıplarıyla kazanılıyor.</strong> Stripe'ta Head of Product Stephanie J. Neill, AI ürünlerinde güveni modeli daha akıllı yaparak değil; policy dosyasına dayalı yanıtlar, zorunlu kaynak gösterme (citation) ve düşük güven skorunu insana yönlendirme gibi somut ürün kalıplarıyla inşa etmenin gerektiğini anlatıyor.</p>
+    <p><strong>2. Araştırma döngüsü haftalardan saatlere iniyor.</strong> Typeform'un AI moderatörlü Research Flow demosu, anket ölçeği ile mülakat derinliğini aynı çalışmada birleştirip içgörüyü gerçek zamanlı üreterek, kullanıcı araştırmasının PM'in karar hızını artık geciktirmeyebileceğini gösteriyor.</p>
+    <p><strong>3. Spec'ten değil koddan başlamak, PM'in rolünü yeniden tanımlıyor.</strong> Webflow CPO'su Ben Haefele, PRD yazıp sonra kod yazdırmak yerine önce çalışan koddan başlayıp PRD'yi geriye dönük üretmeyi öneriyor; bu, PM kariyer çerçevesinden şirket ritmine kadar organizasyonu baştan tasarlamayı gerektiriyor.</p>
+    <p><strong>4. Üretim ölçeklendi, karar verme ölçeklenmedi.</strong> Miro'dan Damir Dizdarević, Forrester verisiyle AI'ın içerik/artifact üretimini hızlandırdıkça ekip hizasızlığını da büyüttüğünü gösteriyor; çözüm olarak dağınık geri bildirim ve güncellemeleri tek bir agentic canvas akışında birleştirmeyi öneriyor.</p>
+    <p><strong>5. "Skill mi, agent mi?" ayrımı GTM otomasyonunun ilk sorusu olmalı.</strong> Atlassian'dan Axel Sooriah, her AI otomasyon fikrini uygulamadan önce bunun tek seferlik bir skill mi yoksa sürekli çalışan bir agent mi olması gerektiğini sormayı öneriyor; bu ayrım, AI'ın nerede değer kattığını nerede ek iş yarattığını netleştiriyor.</p>
+    <p><strong>6. PRD-tasarım-mühendislik döngüsü haftalardan aynı güne inebiliyor.</strong> Replit'ten Samuel Spitz, tıklanabilir prototip + dashboard + sunumu tek bir oturumda üreten beş adımlı bir iş akışıyla, PM'in bir fikri klasik spec döngüsü yerine doğrudan çalışan bir çıktı üzerinden ilerletmesini gösteriyor.</p>
+    <p><strong>7. PM'in kendi ham verisi, bir analisti beklemeden yapılandırılmış çıktıya dönüşebiliyor.</strong> NotebookLM üzerine yazılan bir promt seti, destek ticket'ı/görüşme transkripti/rakip dokümanı gibi ham metinleri agentic research ve chat-to-deliverable kalıplarıyla doğrudan dashboard, anomali raporu veya sunuma çeviriyor.</p>
+    <p><strong>8. PM'in kişisel AI kurulumu, tekli chat'ten kalıcı bir sisteme dönüşüyor.</strong> Claude Projects'i knowledge/instructions/prompts çerçevesiyle kurmak ve AI'ın memory'sini (global/project/kendi dosya sistemi) doğru seviyede yönetmek, PM'in her seferinde bağlamı yeniden anlatmasını, bir kez kurulup kullandıkça iyileşen kişisel bir sisteme taşıyor.</p>
+  </div>
+</section>
+
+
+<!-- YOUTUBE -->
+<section id="youtube">
+  <div class="section-title">YouTube <span>8 içerik</span></div>
+
+  <div class="cards-grid">
+    <div class="card score-5 clickable" onclick="window.open('detaylar/stephanie-neill-stripe-ai-trust-framework.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">Product School × Stephanie J. Neill (Head of Product, Stripe) · 05.08.2026</div>
+        <span class="score-badge s5">★ 5/5 PM-AI</span>
+      </div>
+      <div class="card-title">Framework for Building AI Products Users Can Trust</div>
+      <a href="https://www.youtube.com/watch?v=7-u4483zm6A" class="card-link" target="_blank" onclick="event.stopPropagation()">youtube.com/watch?v=7-u4483zm6A</a>
+      <p class="card-summary">Stripe'ta Head of Product Stephanie J. Neill, AI ürünlerinde güveni modeli daha akıllı yapmak yerine daha öngörülebilir/şeffaf hale getirerek kazanmayı öneriyor: yanıtları bir policy dosyasına dayandırma, kaynak gösterimini (citation) zorunlu kılma, her yanıta bir güven skoru ekleme ve %70'in altındaki skorları otomatik olarak insan incelemesine yönlendirme. PM ekipleri için AI özelliği tasarımını 'daha iyi model' yerine 'ölçülebilir güven kalıpları' etrafında kurmayı sağlayan doğrudan uygulanabilir bir çerçeve.</p>
+      <div class="card-tags"><span class="tag blue">Yöntem</span><span class="tag green">AI Ürün Tasarımı</span><span class="tag amber">Trust & Safety</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+    <div class="card clickable" onclick="window.open('detaylar/sun-park-typeform-ai-research-flow.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">Product School × Sun Park (AI Product Lead, Typeform) & Leigh Smith (Sr. Director of Research, Typeform) · 06.08.2026</div>
+        <span class="score-badge s4">4/5 PM-AI</span>
+      </div>
+      <div class="card-title">AI Research to Decide What to Build Next in Hours, Not Weeks</div>
+      <a href="https://www.youtube.com/watch?v=xvnfkrCy1jQ" class="card-link" target="_blank" onclick="event.stopPropagation()">youtube.com/watch?v=xvnfkrCy1jQ</a>
+      <p class="card-summary">Typeform'un AI Product Lead'i Sun Park ve Araştırma Direktörü Leigh Smith, anket hızı ile mülakat derinliği arasındaki klasik trade-off'u ortadan kaldırmayı vaat eden Research Flow aracını canlı gösteriyor: gerçek zamanlı takip sorusu soran bir AI moderatörle bir çalışma kuruyorlar ve dakikalar içinde 37'den fazla tamamlanmış yanıt, sürekli güncellenen içgörü/duygu analizi/alıntı akışı elde ediyorlar. PM'ler için araştırma döngüsünü haftalardan saatlere indiren somut bir vendor/araç sinyali.</p>
+      <div class="card-tags"><span class="tag amber">Araç</span><span class="tag green">Kullanıcı Araştırması</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+    <div class="card score-5 clickable" onclick="window.open('detaylar/ben-haefele-webflow-building-backwards.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">Product School × Ben Haefele (CPO, Webflow) · 06.08.2026</div>
+        <span class="score-badge s5">★ 5/5 PM-AI</span>
+      </div>
+      <div class="card-title">Building Backwards: The New Rules of AI-Native Product Development</div>
+      <a href="https://www.youtube.com/watch?v=PbueggsSfG0" class="card-link" target="_blank" onclick="event.stopPropagation()">youtube.com/watch?v=PbueggsSfG0</a>
+      <p class="card-summary">Webflow CPO'su Ben Haefele, ürün geliştirmeye spesifikasyondan değil çalışan koddan başlamayı öneriyor ve bunu "Agile Manifesto'nun nihayet gerçekleşmiş en saf hali" olarak tanımlıyor. Webflow'un bu yaklaşımı altı ay içinde nasıl operasyonelleştirdiğini anlatıyor: PM kariyer çerçevesini yeniden yapılandırma, şirket çapında haftalık "Builder Days" ve commit geçmişini analiz ederek PRD'yi geriye dönük üreten bir ajan. PM ekiplerinin roadmap/kariyer/süreç tasarımını doğrudan değiştirecek bir organizasyon modeli.</p>
+      <div class="card-tags"><span class="tag blue">Yöntem</span><span class="tag green">Organizasyon</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+    <div class="card clickable" onclick="window.open('detaylar/damir-dizdarevic-miro-ai-multiplayer.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">Product School × Damir Dizdarević (Head of Product, Miro) · 05.08.2026</div>
+        <span class="score-badge s4">4/5 PM-AI</span>
+      </div>
+      <div class="card-title">AI Multiplayer Collaboration Across the Product Lifecycle</div>
+      <a href="https://www.youtube.com/watch?v=YVafZodihik" class="card-link" target="_blank" onclick="event.stopPropagation()">youtube.com/watch?v=YVafZodihik</a>
+      <p class="card-summary">Miro'da Head of Product Damir Dizdarević, 518 liderle yapılan bir Forrester araştırmasına dayanarak AI'ın ekip hizasızlığını neden büyüttüğünü anlatıyor: "üretim ölçeklendi ama karar verme ölçeklenmedi". Agentic canvas üzerinde iki iş akışını canlı kuruyor: dağınık geri bildirimi önceliklendirilmiş backlog + strateji dokümanı + prototip varyantlarına çeviren bir akış, ve dağınık Slack güncellemelerini tek bir durum raporunda birleştiren bir akış. PM ekiplerinin çok-kişili (multiplayer) çalışma alanını AI ile nasıl yapılandırabileceğine dair somut bir araç/vendor sinyali.</p>
+      <div class="card-tags"><span class="tag amber">Araç</span><span class="tag green">Ekip Hizalanması</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+    <div class="card score-5 clickable" onclick="window.open('detaylar/axel-sooriah-atlassian-ai-gtm.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">Product School × Axel Sooriah (PM & AI Evangelist, Atlassian) · 04.08.2026</div>
+        <span class="score-badge s5">★ 5/5 PM-AI</span>
+      </div>
+      <div class="card-title">AI-Assisted GTM for Product Teams</div>
+      <a href="https://www.youtube.com/watch?v=3o2C74iWez4" class="card-link" target="_blank" onclick="event.stopPropagation()">youtube.com/watch?v=3o2C74iWez4</a>
+      <p class="card-summary">Atlassian'da PM & AI Evangelist olan Axel Sooriah, "skill" ile "agent" arasındaki farkı pratik bir çerçeveye dönüştürüyor ve Dia, Rovo, Cursor ile kendi gerçek iş akışlarını gösteriyor: gününü odaklayan bir sabah brifingi ve bir webinar-performans skill'ini talep üzerine çalışan bir Slack ajanına dönüştürmesi gibi örnekler. Asıl değer, AI'ın GTM çalışmasında nerede gerçekten değer kattığı ile nerede sadece ek iş yarattığı arasında karar vermeyi sağlayan somut bir ayrım kriteri sunması. PM'lerin kendi günlük GTM/otomasyon iş akışlarını tasarlarken doğrudan uygulayabileceği bir yöntem.</p>
+      <div class="card-tags"><span class="tag blue">Yöntem</span><span class="tag green">GTM</span><span class="tag amber">Otomasyon</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+    <div class="card score-5 clickable" onclick="window.open('detaylar/samuel-spitz-replit-pm-loop.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">Product School × Samuel Spitz (Member of Technical Staff, Replit) · 03.08.2026</div>
+        <span class="score-badge s5">★ 5/5 PM-AI</span>
+      </div>
+      <div class="card-title">From Six Weeks to Same Day: The New PM Loop</div>
+      <a href="https://www.youtube.com/watch?v=7_m305SwdEc" class="card-link" target="_blank" onclick="event.stopPropagation()">youtube.com/watch?v=7_m305SwdEc</a>
+      <p class="card-summary">Replit'ten Samuel Spitz, sahnede canlı olarak her PM'in ihtiyaç duyduğu üç çıktıyı üretiyor: bir sonraki PRD'nin yerini alan tıklanabilir bir prototip, ekibin araçlarına bağlı bir iç dashboard ve markalı, dışa aktarılabilir bir slayt destesi. Bunları tekrarlanabilir beş adımlı bir iş akışına ve kopyalanabilir üç promta indiriyor. Haftalarca süren 'spec yaz, tasarım bekle, mühendisliğe devret' döngüsünü aynı gün içinde çalışan bir prototip/dashboard/sunuma indiren, doğrudan uygulanabilir bir PM iş akışı.</p>
+      <div class="card-tags"><span class="tag blue">Yöntem</span><span class="tag green">Prototipleme</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+    <div class="card score-5 clickable" onclick="window.open('detaylar/parker-prompts-claude-projects-kip.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">Parker Prompts · 12.08.2026</div>
+        <span class="score-badge s5">★ 5/5 PM-AI</span>
+      </div>
+      <div class="card-title">How to ACTUALLY Use Claude Projects (Do This)</div>
+      <a href="https://www.youtube.com/watch?v=lAUvDCQEFMk" class="card-link" target="_blank" onclick="event.stopPropagation()">youtube.com/watch?v=lAUvDCQEFMk</a>
+      <p class="card-summary">Parker Prompts, Claude Projects'i knowledge/instructions/prompts (KIP) çerçevesiyle kurup bunun üzerine üç somut sistem inşa ediyor: kendi sesinle yazan bir ghostwriter, güvendiğin kişilerin bakış açısını simüle eden bir karar-destek paneli ve connector'lar + schedule ile arka planda tekrarlayan işleri kendiliğinden yürüten bir autopilot. PM'lerin ayda birden fazla tekrarladığı ve her seferinde yeniden bağlam anlatmak zorunda kaldığı işler için doğrudan uygulanabilir, adım adım bir kurulum rehberi.</p>
+      <div class="card-tags"><span class="tag blue">Yöntem</span><span class="tag green">Kişisel Prodüktivite</span><span class="tag amber">Otomasyon</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+    <div class="card clickable" onclick="window.open('detaylar/jeff-su-ai-memory-explained.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">Jeff Su · 12.08.2026</div>
+        <span class="score-badge s4">4/5 PM-AI</span>
+      </div>
+      <div class="card-title">AI Memory, Clearly Explained</div>
+      <a href="https://www.youtube.com/watch?v=cEEw1AbeysI" class="card-link" target="_blank" onclick="event.stopPropagation()">youtube.com/watch?v=cEEw1AbeysI</a>
+      <p class="card-summary">Jeff Su, AI araçlarındaki memory özelliklerinin asıl sorununun 'hatırlayıp hatırlamaması' değil, bağlamı ne kadar akıllıca yönettiği olduğunu savunuyor ve üç seviyeli bir çerçeve sunuyor: hesap düzeyinde global memory, tek bir iş akışına bağlı project memory ve kullanıcının kendi düzenlediği, AI'ın çalışmadan önce okuduğu dosyalara dayalı bir sistem. PM'ler için pratik çıkarım: sürekli işlerde önce project memory'yle başlamak, eksik/bayat bağlam belirgin şekilde zaman kaybettirmeye başladığında görünür ve düzenlenebilir kendi dosya sistemine geçmek.</p>
+      <div class="card-tags"><span class="tag blue">Yöntem</span><span class="tag amber">AI Araçları</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSTACK -->
+<section id="substack">
+  <div class="section-title">Substack <span>3 içerik</span></div>
+
+  <div class="cards-grid">
+    <div class="card clickable" onclick="window.open('detaylar/notebooklm-pm-analiz-promptlari.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">LearnAIWithMe × Gencay · 09.08.2026</div>
+        <span class="score-badge s4">4/5 PM-AI</span>
+      </div>
+      <div class="card-title">10 NotebookLM Prompts That Turn It Into a Data Analyst</div>
+      <a href="https://substack.com/home/post/p-209496227" class="card-link" target="_blank" onclick="event.stopPropagation()">substack.com/home/post/p-209496227</a>
+      <p class="card-summary">Gencay, Google'ın NotebookLM'ini (Gemini Notebook) ham dokümanlardan yapılandırılmış analiz çıktısı üreten bir analiste dönüştüren 10 promt paylaşıyor. Örnekler fatura/gelir verisi üzerinden gösterilse de, aynı kalıplar (agentic research/URL vacuum ile kaynak toplama, code execution sandbox'ta hesaplama, anomali/örüntü tespiti, chat-to-deliverable ile doğrudan Excel/PPT çıktısı) bir PM'in kendi ham verisine — destek ticket'ları, kullanıcı görüşme transkriptleri, rakip dokümanları, anket sonuçları — birebir uygulanabilir. PM'in bir analisti beklemeden kendi başına yapılandırılmış çıktı üretebilmesini sağlayan somut bir araç kalıbı.</p>
+      <div class="card-tags"><span class="tag amber">Araç</span><span class="tag green">Veri Analizi</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+    <div class="card clickable" onclick="window.open('detaylar/nitin-sharma-notebooklm-claude-workflows.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">AI Made Simple × Nitin Sharma · 10.08.2026</div>
+        <span class="score-badge s4">4/5 PM-AI</span>
+      </div>
+      <div class="card-title">10 Practical NotebookLM + Claude Workflows</div>
+      <a href="https://aimadesimple0.substack.com/p/10-practical-notebooklm-claude-workflows" class="card-link" target="_blank" onclick="event.stopPropagation()">aimadesimple0.substack.com/p/10-practical-notebooklm-claude-workflows</a>
+      <p class="card-summary">Nitin Sharma, NotebookLM ve Claude'u iki ayrı araç değil net rol ayrımına sahip tek bir sistem olarak kullanmayı öneriyor: NotebookLM büyük kaynak yığınları arasında desen/kanıt çıkarırken, Claude bu yapılandırılmış bulguyu önceliklendirilmiş bir çıktıya (yol haritası, strateji, rapor) dönüştürüyor. On workflow'dan üçü doğrudan PM işine denk düşüyor: müşteri şikayetlerinden önceliklendirilmiş bir ürün yol haritası çıkarma, rakip materyallerinden konumlandırma boşluklarını bulma ve kendi geçmiş çalışmalarını denetleyip tekrarlayan hataları görme.</p>
+      <div class="card-tags"><span class="tag amber">Araç</span><span class="tag green">Ürün Yol Haritası</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+    <div class="card clickable" onclick="window.open('detaylar/ai-with-ram-10-prompts-pm-versiyonu.html', '_blank')">
+      <div class="card-header">
+        <div class="card-source">AI With Ram × Ram · 06.08.2026</div>
+        <span class="score-badge s3">3/5 PM-AI</span>
+      </div>
+      <div class="card-title">10 AI Prompts That Unlock 100% of AI's Potential</div>
+      <a href="https://growtechie.substack.com/p/10-ai-prompts-that-unlock-100-of" class="card-link" target="_blank" onclick="event.stopPropagation()">growtechie.substack.com/p/10-ai-prompts-that-unlock-100-of</a>
+      <p class="card-summary">Ram, çıktı kalitesinin hangi AI modelinin seçildiğinden değil AI ile nasıl iletişim kurulduğundan belirlendiğini savunarak on genel prompting tekniği sıralıyor: uzman rolü atama, AI'a önce soru sordurma, seviyeye uygun kademeli açıklama, sistem düşüncesi, varsayımları sorgulatma, çoklu strateji karşılaştırma, yeniden kullanılabilir kişisel çerçeveler, öz-eleştiri isteme, hedef kitle perspektifinden yazdırma ve bir kritere ulaşana kadar kendi kendini düzelttirme. Araç-bağımsız, PM'in günlük stakeholder/araştırma promptlarına da uygulanabilecek genel bir prompting checklist'i; yeni veya PM'e özgü bir sistem sunmuyor.</p>
+      <div class="card-tags"><span class="tag blue">Prompting</span><span class="tag ">Genel Pratik</span></div>
+      <span class="card-action">Detaylı analiz →</span>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<script src="../../assets/script.js"></script>
+</body>
+</html>

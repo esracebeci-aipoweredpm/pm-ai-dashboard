@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>10 AI Prompt Tekniği: PM Versiyonu | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">AI With Ram × Ram · 06 Ağustos 2026</div>
+  <h1>10 AI Prompt Tekniği: PM <em>Versiyonu</em></h1>
+  <p class="meta">Kaynak: <a href="https://growtechie.substack.com/p/10-ai-prompts-that-unlock-100-of" target="_blank">growtechie.substack.com/p/10-ai-prompts-that-unlock-100-of</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Ram, çıktı kalitesinin hangi AI modelinin seçildiğinden değil AI ile nasıl iletişim kurulduğundan belirlendiğini savunuyor ve bunu 10 tekrarlanabilir prompting tekniğine indiriyor. Teknikler araç-bağımsız ve genel olsa da, her biri bir PM'in günlük stakeholder iletişimi, karar analizi ve doküman incelemesi işine doğrudan uyarlanabiliyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">10 teknik, tek bakışta</div>
+    <p>Uzman rolü atama, çözümden önce soru sordurma, seviyeye uygun kademeli açıklama, sistem düşüncesi (bileşenlere ayırma), varsayımları sorgulatma, hız/maliyet/kalite açısından çoklu strateji karşılaştırma, yeniden kullanılabilir kişisel çerçeveler oluşturma, editör gözüyle öz-eleştiri isteme, hedef kitle perspektifinden yazdırma ve bir kritere ulaşana kadar kendi kendini düzelttirme.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Bu tekniklerin PM'e özgü bir yanı yok — ama PM'in en sık tekrarladığı beş iş (stakeholder güncellemesi yazma, eksik bağlamla karar isteme, karmaşık bir değişikliği parçalara ayırma, önceliklendirme trade-off'larını görme, bir PRD'yi yayınlamadan önce denetleme) bu tekniklerle birebir eşleşiyor. Aşağıdaki "Kullanım Senaryoları" bölümünde her biri için kopyala-yapıştır bir prompt var.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Rol atamadan istenen cevap ortalama/genel kalıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir soru rolsüz sorulduğunda AI, kimseye özel olmayan, ders kitabı tonunda bir cevap veriyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>"15+ yıllık deneyimli [rol] gibi davran" demek, cevabı teoriden çok pratik tavsiyeye kaydırıyor — PM'in bir uzmana danışıyormuş gibi cevap almasını sağlıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. AI önce soru sormazsa eksik bağlamla yanlış yönde ilerliyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>PM genelde bir karar isteğini eksik bağlamla (kullanıcı segmenti, kısıt, hedef belirtmeden) yazıyor, AI da bunu tahmin ederek dolduruyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>AI'a çözümden önce soru sordurmak, eksik bilgiyi tahmin etmek yerine açıkça istemesini sağlıyor — cevabın isabet oranı artıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Sistem düşüncesi, karmaşık bir değişikliğin yan etkilerini görünür kılıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir ürün değişikliği (fiyatlandırma, onboarding, izin modeli) tek bir cümlede özetlendiğinde, bileşenler arası etkileşim gözden kaçıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>"Bunu bileşenlere ayır ve aralarındaki etkileşimi göster" istemi, PM'in gözden kaçırdığı bağımlılıkları ortaya çıkarıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Tek bir öneri yerine üç strateji istemek trade-off'u görünür kılıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>AI'dan tek bir "en iyi" çözüm istendiğinde, hız/maliyet/kalite arasındaki gerilim gizli kalıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>"En hızlı, en ucuz ve en kaliteli üç yaklaşımı ver" istemi, PM'in bir önceliklendirme kararını üstünkörü değil trade-off'ları görerek vermesini sağlıyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Beş PM işi için, makaledeki tekniklerden uyarlanmış, doğrudan kopyala-yapıştır kullanılabilecek promptlar.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Stakeholder güncellemesini hedef kitle perspektifinden yazdırma</div>
+    <p>Bir özellik/durum güncellemesini, okuyacak kişinin (yönetici, mühendislik ekibi, satış) bakış açısından yeniden yazdırıp neyin kafa karıştıracağını, neyin heyecanlandıracağını görmek için:</p>
+    <p><em>"Act as a senior product communicator. Rewrite this update from the perspective of a VP who has 2 minutes to read it — what would confuse them, what would they ask next, and what should be cut?"</em></p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Bir öneri istemeden önce AI'a eksik bağlamı sordurma</div>
+    <p>Bir özellik/önceliklendirme kararı için doğrudan cevap istemek yerine, önce hangi bilginin eksik olduğunu sordurmak için:</p>
+    <p><em>"Before giving any recommendation on [özellik/karar], ask me the questions you need about our users, constraints, and goals so your answer is at least 95% accurate."</em></p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Karmaşık bir değişikliği bileşenlerine ayırma</div>
+    <p>Fiyatlandırma, onboarding veya izin modeli gibi çok parçalı bir değişikliğin yan etkilerini görmek için:</p>
+    <p><em>"Break down [bu değişiklik] into its components, explain how each part works, and show how they interact with each other and with [ilgili sistem]."</em></p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Bir önceliklendirme kararında trade-off'ları görme</div>
+    <p>Tek bir "en iyi" çözüm yerine hız/maliyet/kalite ekseninde seçenekleri karşılaştırmak için:</p>
+    <p><em>"Give me three different approaches to solving [problem]: the fastest to ship, the cheapest to build, and the highest-quality long-term solution. Explain the trade-offs of each for a product team."</em></p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">5. Bir PRD'yi yayınlamadan önce editör gözüyle denetleme</div>
+    <p>Bir PRD/spec taslağını paylaşmadan önce netlik, fizibilite, başarı metrikleri ve edge-case kapsamı açısından son bir kalite kontrolden geçirmek için:</p>
+    <p><em>"Review this PRD like an experienced product leader. Score it across clarity, feasibility, success metrics, and edge-case coverage. Rewrite anything scoring below 9/10, then keep refining until every section passes."</em></p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> PRD içinde müşteriye özel veya gizli bilgi varsa, dışarıya açık bir AI aracına yapıştırmadan önce temizlenmeli.</div>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

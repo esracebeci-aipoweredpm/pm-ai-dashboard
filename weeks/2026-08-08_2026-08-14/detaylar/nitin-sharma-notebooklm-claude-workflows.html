@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>NotebookLM + Claude: Tek Bir Sistem Olarak Kullanmak | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">AI Made Simple × Nitin Sharma · 10 Ağustos 2026</div>
+  <h1>NotebookLM + Claude: Tek Bir Sistem Olarak <em>Kullanmak</em></h1>
+  <p class="meta">Kaynak: <a href="https://aimadesimple0.substack.com/p/10-practical-notebooklm-claude-workflows" target="_blank">aimadesimple0.substack.com/p/10-practical-notebooklm-claude-workflows</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Nitin Sharma, NotebookLM ve Claude'a ayrı ayrı aynı "özetle" komutunu vermenin her iki aracın da gücünü heba ettiğini savunuyor. Doğru kullanım net bir rol ayrımına dayanıyor: NotebookLM büyük kaynak yığınları (yorumlar, transkriptler, dokümanlar) arasında desen bulup kanıt çıkarmakta güçlü; Claude ise bu yapılandırılmış bulguyu alıp önceliklendirilmiş, uygulanabilir bir çıktıya dönüştürmekte güçlü.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">İki aracın rol ayrımı</div>
+    <p>Makale 10 workflow üzerinden hep aynı dört adımlı kalıbı tekrarlıyor: (1) ham kaynağı NotebookLM'e yükle, (2) NotebookLM'den yapılandırılmış bir gruplama/karşılaştırma iste, (3) bulguyu Claude'a aktar, (4) Claude'dan etki/aciliyete göre önceliklendirilmiş bir karar çıktısı iste. On workflow'dan üçü doğrudan bir PM'in düzenli işine karşılık geliyor: müşteri şikayetlerinden ürün yol haritası, rakip materyalinden konumlandırma boşlukları ve kendi geçmiş çalışmasını denetleme.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Bir kaynak yığınını (yorumlar, rakip dokümanları, geçmiş çalışmalar) doğrudan tek bir chat'e yapıştırıp "özetle" demek yerine, önce NotebookLM'de kanıta dayalı bir gruplama/karşılaştırma çıkarmak, sonra bu bulguyu Claude'a önceliklendirme/karar sorusuyla vermek; genel bir özet yerine doğrudan aksiyona geçilebilir bir çıktı (yol haritası, strateji, rapor) üretiyor.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Aynı istek her iki araca da verilirse ikisi de zayıflar</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>NotebookLM'e "önceliklendir" gibi bir karar sorusu, Claude'a da "yüzlerce kaynağı karşılaştır" gibi bir kapsam sorusu sorulduğunda, her iki araç da kendi güçlü olduğu işin dışına çıkıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Rol ayrımı yapıldığında (NotebookLM = kanıt/desen, Claude = karar/çıktı) sonuç, tek bir araca "özetle" demekten çok daha isabetli oluyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Ham kaynak doğrudan Claude'a değil önce NotebookLM'e gitmeli</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Yüzlerce müşteri yorumu/rakip dokümanı/transkript doğrudan bir chat'e yapıştırıldığında bağlam kaybı ve yüzeysel bir özet riski var.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Önce NotebookLM'de yapılandırılmış bir gruplama/karşılaştırma çıkarmak, Claude'un işleyeceği girdiyi kanıta dayalı ve kompakt hale getiriyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Claude'dan istenen çıktı bir özet değil bir karar olmalı</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Claude'a yapılandırılmış bulgu verildiğinde bile sadece "özetle" demek genel bir metinle sonuçlanıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>"Etki/zorluk/aciliyete göre sırala", "boşlukları belirle", "en yüksek etkili üç zayıflığı bul" gibi karar-odaklı istemler, doğrudan aksiyona geçilebilir bir çıktı üretiyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Aynı dört adımlı kalıp, farklı PM işlerine tekrar tekrar uygulanabiliyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Müşteri geri bildirimi analizi, rekabet analizi ve kendi iş denetimi çok farklı konular olsa da hepsi "yükle → grupla/karşılaştır → aktar → önceliklendir" kalıbını izliyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Bir PM bu kalıbı bir kez öğrendiğinde, kaynak türü değiştikçe (yorumlar yerine rakip dokümanı, rakip dokümanı yerine kendi notları) sadece girdiyi değiştirip aynı süreci tekrar kullanabiliyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Dört adımlı NotebookLM + Claude kalıbının bir PM'in tekrarlayan analiz işlerine uyarlanabileceği dört somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Müşteri geri bildiriminden önceliklendirilmiş bir ürün yol haritası çıkarma</div>
+    <p>Müşteri yorumları, destek biletleri, anket yanıtları ve satış çağrı transkriptleri NotebookLM'e yüklenir; geri bildirimin yinelenen sorunlara, istenen sonuçlara, özellik isteklerine ve segmentlere göre gruplanması istenir; bulgu Claude'a aktarılıp en ağrılı, sık görülen ve hizmet verilmeyen sorunlar etki/zorluk/aciliyete göre sıralanır.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Rakip materyalinden konumlandırma boşluğu bulma</div>
+    <p>Rakip web siteleri, ürün dokümanları, fiyatlandırma sayfaları, inceleme ve vaka çalışmaları NotebookLM'e yüklenir; her rakibin özellik/konumlandırma/fiyatlandırma/güçlü-zayıf yönleri yapılandırılmış biçimde karşılaştırılır; analiz Claude'a aktarılıp hiçbir rakibin doldurmadığı boşluklar ve diferansiasyon yolları belirlenir.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Kendi geçmiş çalışmasını denetleyip tekrarlayan hataları görme</div>
+    <p>Önceki çalışmalar, notlar, başarılı/başarısız projeler ve geri bildirimler NotebookLM'e yüklenir; iyi yapılan işlerdeki desenler ve tekrarlayan hatalar belirlenir; bulgu Claude'a aktarılıp en yüksek etkili üç zayıflık ve yapılması gereken spesifik değişiklikler istenir.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Uzun bir kaynağı az sayıda kritik bulguya indirgeme</div>
+    <p>Uzun bir rapor veya birden fazla kaynak NotebookLM'e yüklenip kanıta dayalı bir özet çıkarılır; bu özet Claude'a aktarılıp en kritik birkaç bulgu ve bunların ima ettiği aksiyon istenir.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Yüklenen müşteri/rakip verisinin paylaşım ve gizlilik kurallarına uygun olduğunun önceden kontrol edilmesi.</div>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

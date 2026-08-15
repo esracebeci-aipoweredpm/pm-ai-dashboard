@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI x PM Haftalık Bülten — {{ week_label }} ({{ date_range_title }})</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+
+<header>
+  <a class="eyebrow" href="../../index.html">← AI x PM Haftalık Bülten</a>
+  <h1>{{ week_label }} — <em>{{ date_range_title }}</em></h1>
+  <div class="meta">
+    <span class="week-pill">{{ date_range_pill }}</span>
+    <div class="stats">
+      <span class="stat"><strong>{{ total_sources }}</strong> kaynak</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-chip active" onclick="showSection('overview', this)">Genel Bakış</div>
+{%- for ch in channels %}
+  <div class="nav-chip" onclick="showSection('{{ ch.id }}', this)">{{ ch.name }} <span class="count">{{ ch.cards|length }}</span></div>
+{%- endfor %}
+</nav>
+
+<main>
+
+<!-- OVERVIEW -->
+<section id="overview" class="active">
+  <div class="section-title">Genel <span>Bakış</span></div>
+
+  <div class="week-summary">
+    <h3>Bu haftanın baskın temaları</h3>
+{%- for theme in themes %}
+    <p>{{ theme|safe }}</p>
+{%- endfor %}
+  </div>
+</section>
+
+{% for ch in channels %}
+<!-- {{ ch.name|upper }} -->
+<section id="{{ ch.id }}">
+  <div class="section-title">{{ ch.name }} <span>{{ ch.cards|length }} içerik</span></div>
+
+  <div class="cards-grid">
+{%- for card in ch.cards %}
+    <div class="card{% if card.score == 5 %} score-5{% endif %}{% if card.has_detail %} clickable" onclick="window.open('detaylar/{{ card.detail_slug }}.html', '_blank')"{% else %} no-detail"{% endif %}>
+      <div class="card-header">
+        <div class="card-source">{{ card.source }} · {{ card.date }}</div>
+        <span class="score-badge s{{ card.score }}">{% if card.score == 5 %}★ {% endif %}{{ card.score }}/5 PM-AI</span>
+      </div>
+      <div class="card-title">{{ card.title }}</div>
+      <a href="{{ card.url }}" class="card-link" target="_blank"{% if card.has_detail %} onclick="event.stopPropagation()"{% endif %}>{{ card.url_label }}</a>
+      <p class="card-summary">{{ card.summary }}</p>
+      <div class="card-tags">{% for tag in card.tags %}<span class="tag {{ tag.color|default('') }}">{{ tag.label }}</span>{% endfor %}</div>
+      {% if card.has_detail -%}
+      <span class="card-action">Detaylı analiz →</span>
+      {%- else -%}
+      <span class="card-action">Detay analiz oluşturulmadı{% if card.no_detail_note %} ({{ card.no_detail_note }}){% endif %}</span>
+      {%- endif %}
+    </div>
+{%- endfor %}
+  </div>
+</section>
+{% endfor %}
+
+</main>
+
+<script src="../../assets/script.js"></script>
+</body>
+</html>

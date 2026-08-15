@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Claude Projects'i Gerçekten Doğru Kurmak | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Parker Prompts · 12 Ağustos 2026</div>
+  <h1>Claude Projects'i Gerçekten Doğru <em>Kurmak</em></h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=lAUvDCQEFMk" target="_blank">youtube.com/watch?v=lAUvDCQEFMk</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Parker Prompts, çoğu kullanıcının Claude Projects'e sadece dosya "dump"ladığını ve bu yüzden aracın potansiyelinin onda birini bile kullanmadığını savunuyor. Doğru kurulan bir project, KIP — Knowledge (dosyalar), Instructions (davranış talimatları), Prompts (kullanım anı) — çerçevesiyle her açıldığında kullanıcının sesiyle ve kendi bilgisinden yola çıkarak işi baştan sona yapıyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Üç somut proje</div>
+    <p><strong>Ghostwriter:</strong> sesli bir röportajdan çıkarılan kişisel profil + en iyi işler ile kullanıcının tonunda yazan bir asistan. <strong>Cabinet:</strong> 2-3 güvenilir kişinin kamuya açık materyalinden damıtılmış "düşünce profilleri" ile kurulan, kararları farklı bakış açılarıyla tartan bir panel. <strong>Autopilot:</strong> Claude desktop/co-work'te connector'lar (Drive, Gmail) ve bir schedule ile arka planda tekrarlayan bir işi (ör. video transkriptini haftalık içerik paketine çevirme) insan müdahalesi olmadan tamamlayan bir kurulum.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Ayda birden fazla tekrarlanan ve her seferinde yeniden bağlam anlatmayı gerektiren herhangi bir iş (kendi sesinle yazmak, kendi verilerine göre bir kararı tartmak, aynı doküman setinden soru yanıtlamak) bir project'e değer. Kural basit: knowledge'a "her zaman doğru olan gerçekler" konur, instructions'a "her seferinde nasıl davranması gerektiği" konur.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Knowledge/Instructions ayrımı yapılmadan bir project "aptal" kalır</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Çoğu kullanıcı dosyaları knowledge'a yüklüyor ama hiçbir instructions belirlemiyor — yani projeye ne yapması gerektiğini söyleyen hiçbir şey yok.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Basit bir test işe yarıyor: bir cümle kimse bir şey sormamışken de anlamlıysa (bir gerçek) knowledge'a, sadece bir emir olarak anlamlıysa instructions'a gider.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Profil dosyası, yazmayı değil konuşmayı yakalamalı</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>İnsanlar yazarken kendini toparlıyor ve daha resmi/donuk bir tonla yazıyor; oysa profil oluşturma promptuna sesli bir voice-to-text aracıyla yanıt vermek doğal sesi yakalıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Ghostwriter'ın ürettiği her metin, yazılı değil konuşulmuş bir profilden beslendiği için kullanıcının gerçek sesine daha yakın çıkıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Cabinet, ham transkript değil damıtılmış bir "düşünce profili" ile çalışmalı</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir danışmanın saatlerce süren ham röportaj transkriptini doğrudan yüklemek, o kişinin nasıl düşündüğünü/tartıştığını özetleyen kısa bir profil vermekten daha az işe yarıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Her kişi önce bir "ingest" promptundan geçirilip kısa bir profile indirgeniyor; panel bu profillerle, kullanıcının kendi profiliyle birlikte, gerçek durumu tartıyor — genel bir vaka değil.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Autopilot'u "iş" yapan şey connector'lar ve schedule</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir co-work project'i, Google Drive/Gmail gibi connector'lar bağlanmadan elle kopyala-yapıştır yapılan bir chat'ten farksız kalıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Connector'lar bağlandığında ve iş bir schedule'a bağlandığında, project kullanıcı oturmadan önce bitmiş dosyalar üreten bir sisteme dönüşüyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">5. Tek bir project'i doğru kurmak, beş yarım kalmış project'ten daha değerli</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Aynı anda birden fazla ilgisiz işi yapmaya çalışan, eski dosyaların yenileriyle karıştığı veya kurulduğu gün unutulup bir daha güncellenmeyen instructions'a sahip project'ler zamanla köreliyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Bir işi tek project olarak tutmak, eski dosyaları temizlemek ve chat içinde düzeltmek yerine instructions'ı güncellemek, project'in zamanla daha isabetli çalışmasını sağlıyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">KIP çerçevesinin bir PM'in tekrarlayan işlerine uyarlanabileceği dört somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Kendi sesinle yazan bir "ghostwriter" project'i kurma</div>
+    <p>Sesli yanıtlanan bir röportaj promptuyla kişisel bir profil çıkarttırılır; bu profil + 2-3 en iyi iş knowledge'a eklenir; rol, hedef kitle ve "asla yapma" listesini içeren kısa bir instructions yazılır. Sonuçta kaba madde işaretlerinden bile kullanıcının tonunda ilk taslak üretiliyor.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Güvenilir kişilerin bakış açısını simüle eden bir karar-destek paneli kurma</div>
+    <p>Kamuya açık çok fazla materyali olan 2-3 kişi seçilip her biri bir "ingest" promptundan geçirilerek düşünce profiline indirgenir; kullanıcının kendi durumu panele eklenip bir karar bu panele sorulur, panelin nerede hemfikir nerede ayrıştığı görülür.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Var olan bir project'i arka planda otomatik çalışan bir sisteme dönüştürme</div>
+    <p>Mevcut bir project, knowledge ve instructions'ıyla birlikte Claude desktop/co-work'e aktarılır; Google Drive/Gmail gibi connector'lar bağlanır; tekrarlayan bir iş tarif edilip düzenli bir zamanlamada (ör. her Pazartesi) otomatik çalışacak şekilde ayarlanır.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Connector'ların erişeceği verinin (Drive/Gmail içeriği) hangi bilgiyi görebileceğinin önceden gözden geçirilmesi.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Var olan bir project'i "neden kötü çalışıyor" testinden geçirme</div>
+    <p>Project'teki her cümle için "kimse bir şey sormamışken de anlamlı mı?" testi uygulanır; anlamlıysa knowledge'da kalır, sadece bir emir olarak anlamlıysa instructions'a taşınır; eski/çelişen dosyalar temizlenir ve tekrar eden hatalar chat içinde değil instructions'ta düzeltilir.</p>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

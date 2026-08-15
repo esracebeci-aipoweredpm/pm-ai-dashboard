@@ -1,0 +1,81 @@
+{
+  "week_label": "Hafta 1",
+  "date_range_title": "1-7 Ağustos 2026",
+  "date_range_pill": "Ağustos 2026 / Hafta 1",
+  "themes": [
+    "<strong>1. Kodlamanın ötesi: ürün yargısı skill'leri.</strong> Oji Udezue'nun Claude Code'da viability gate + vet-a-feature skill'leri, PM'lerin sadece kod değil ürün/iş kararlarını da skill haline getirmeye başladığını gösteriyor.",
+    "<strong>2. AI, PM organizasyon modelini sorguluyor.</strong> Whatnot CPO'su Tom Verrilli, AI'ın rutin PM işini almasıyla \"az sayıda, kıdemli, doğrudan icracı PM\" modelinin öne çıktığını anlatıyor.",
+    "<strong>3. Chat arayüzü, arka planda çalışan bir asistana dönüşüyor.</strong> OpenAI'ın ChatGPT Codex/Work demosu, sesli arayüz ve Heartbeats gibi arka plan otomasyonlarıyla chatbot'un tek seferlik soru-cevaptan çok adımlı görevleri uçtan uca devralan bir ajana evrildiğini gösteriyor.",
+    "<strong>4. AI hızlandıkça, PM'in plan/artikülasyon disiplini değer kazanıyor.</strong> Wyndo'nun \"3 seviyeli AI workflow\" çerçevesi, izole chat kullanımından agentic workspace'e geçişte asıl darboğazın araç değil, açık PRD yazma ve sorunu net tanımlama becerisi olduğunu gösteriyor."
+  ],
+  "channels": [
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "cards": [
+        {
+          "source": "Aakash Gupta × Oji Udezue (The Growth Podcast)",
+          "date": "06.08.2026",
+          "score": 5,
+          "title": "These Skills give you PM Superpowers in Claude Code",
+          "url": "https://www.youtube.com/watch?v=Eo26_4JcyNA",
+          "summary": "Eski Typeform/Calendly/Twitter CPO'su Oji Udezue, Claude Code'da kodlama skill'lerinin ötesinde ürün ve iş yargısını (viability gate, vet-a-feature, müşteri keşfi planı) skill haline getiriyor; canlı olarak bir fikir gate'i geçiyor, biri eleniyor. PM ekipleri için özellik/proje ön eleme sürecini standartlaştıracak doğrudan bir model.",
+          "tags": [
+            { "label": "Yöntem", "color": "blue" },
+            { "label": "Ürün Yargısı", "color": "green" }
+          ],
+          "has_detail": true,
+          "detail_slug": "oji-udezue-claude-code-pm-skills"
+        },
+        {
+          "source": "Lenny's Podcast × Tom Verrilli (CPO, Whatnot)",
+          "date": "02.08.2026",
+          "score": 5,
+          "title": "This CPO regrets that product management exists",
+          "url": "https://www.youtube.com/watch?v=ruvis-VWg2s",
+          "summary": "Whatnot CPO'su Tom Verrilli, PM'liğin bir yönetim katmanı değil bir \"trade\" olduğunu, AI'ın veri/kod/canlı geri bildirimde PM'e nasıl doğrudan icracı gücü kazandırdığını ve \"play the accordion\" karar modelini gerçek Twitch/Whatnot örnekleriyle anlatıyor.",
+          "tags": [
+            { "label": "Liderlik", "color": "blue" },
+            { "label": "Organizasyon", "color": "green" }
+          ],
+          "has_detail": true,
+          "detail_slug": "tom-verrilli-whatnot-pm-ai"
+        },
+        {
+          "source": "How I AI × Nick Baumann (OpenAI Developer Experience)",
+          "date": "03.08.2026",
+          "score": 4,
+          "title": "How this OpenAI engineer uses Codex + ChatGPT Work to automate everything",
+          "url": "https://www.youtube.com/watch?v=EgrI2rUmM48",
+          "summary": "OpenAI'da Developer Experience ekibinden Nick Baumann, ChatGPT Codex ve ChatGPT Work'ün yeni özelliklerini (ekran-farkında sesli arayüz, arka planda çalışan Heartbeats otomasyonu, tek promptla canlı site deploy eden ChatGPT Sites) canlı demolarla gösteriyor; chat arayüzünün tek seferlik soru-cevaptan çok adımlı görevleri uçtan uca devralan bir asistana evrildiğini somutluyor.",
+          "tags": [
+            { "label": "Araç", "color": "amber" },
+            { "label": "Otomasyon", "color": "blue" }
+          ],
+          "has_detail": true,
+          "detail_slug": "nick-baumann-chatgpt-work-heartbeats"
+        }
+      ]
+    },
+    {
+      "id": "substack",
+      "name": "Substack",
+      "cards": [
+        {
+          "source": "Alpha Work × Wyndo (AI Maker)",
+          "date": "04.08.2026",
+          "score": 5,
+          "title": "Understanding The 3 Levels of AI Workflows",
+          "url": "https://alphawork.substack.com/p/understanding-the-3-levels-of-ai",
+          "summary": "Wyndo, AI ile çalışmayı üç seviyeye ayırıyor (izole chat, bağlantılı erişim, agentic workspace) ve PRD yazma ile sorunu net artiküle etme gibi PM disiplinlerinin AI hızlandıkça daha da değerli hale geldiğini savunuyor; kendi haftalık iş akışını tek komutlarla otomatikleştirdiği somut örnekler veriyor.",
+          "tags": [
+            { "label": "Yöntem", "color": "blue" },
+            { "label": "Workflow", "color": "green" }
+          ],
+          "has_detail": true,
+          "detail_slug": "wyndo-3-levels-ai-workflow"
+        }
+      ]
+    }
+  ]
+}

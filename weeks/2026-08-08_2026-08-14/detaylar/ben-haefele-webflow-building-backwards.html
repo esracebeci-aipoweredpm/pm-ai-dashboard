@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Building Backwards: AI-Native Ürün Geliştirmenin Yeni Kuralları | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Product School × Ben Haefele (CPO, Webflow) · 06 Ağustos 2026</div>
+  <h1>Building Backwards: AI-Native Ürün Geliştirmenin Yeni <em>Kuralları</em></h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=PbueggsSfG0" target="_blank">youtube.com/watch?v=PbueggsSfG0</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Webflow CPO'su Ben Haefele, ürün geliştirmenin klasik sırasını (önce spec/PRD yaz, sonra kodlat) tersine çeviriyor: önce çalışan bir prototipten/gerçek koddan başla, doğrulama döngüsünü günlere indir, PRD'yi ise işten sonra — commit geçmişini analiz eden bir ajanla — geriye dönük üret. Bunu "Agile Manifesto'nun nihayet gerçekleşmiş en saf hali" olarak tanımlıyor: çalışan yazılım, kapsamlı dokümantasyondan önce gelir. Webflow bu yaklaşımı altı ay içinde tek seferlik bir deney olarak değil, PM kariyer çerçevesini ve şirket ritmini değiştiren bir organizasyon modeline dönüştürmüş.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Webflow'un altı aylık operasyonelleştirme süreci</div>
+    <p>Haefele üç somut değişiklik anlatıyor: (1) PM kariyer çerçevesi, spec yazma/koordinasyon yeteneğinden çok koddan/prototipten başlayabilme yeteneğini ödüllendirecek şekilde yeniden yapılandırıldı; (2) şirket çapında haftalık "Builder Days" başlatıldı — herkesin spesifikasyon yerine doğrudan üretmeye ayrılan sabit bir zaman dilimi; (3) bir ajan, geliştirme sırasında yazılan PRD'yi beklemek yerine, işlem tamamlandıktan sonra commit geçmişini analiz ederek PRD'yi otomatik olarak geriye dönük üretiyor — dokümantasyon işi geciktirmiyor, işin arkasından takip ediyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Bir PM organizasyonu "önce yazılı onay, sonra üretim" sırasını sorgulamalı: doğrulama döngüsünü aylardan güne indirmenin bedeli, PM'in artık spec yazarak değil doğrudan prototip/kod üzerinden düşünerek değer üretmesini istemek. Bu, işe alım kriterlerini, terfi tanımlarını ve dokümantasyonun ne zaman/nasıl üretildiğini (önceden değil, geriye dönük) yeniden tasarlamayı gerektiriyor.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Spec-önce sıralaması, doğrulama döngüsünü yapay olarak uzatıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Geleneksel akışta bir fikir önce yazılı bir PRD'ye dönüştürülüp onaylanıyor, ancak ondan sonra kodlanıyor; bu ardışık sıra, fikrin gerçek dünyada test edilmesini haftalar/aylar geciktiriyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Sırayı tersine çevirip önce çalışan koddan/prototipten başlamak, doğrulama döngüsünü günlere indiriyor — çünkü fikir yazıya değil doğrudan gerçek kullanıma karşı test ediliyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Dokümantasyon geciktirici değil, geriye dönük bir kayıt olabilir</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>PRD'nin kod yazılmadan önce tam ve onaylı olması beklendiğinde, dokümantasyon işin başlamasını engelleyen bir kapı haline geliyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Bir ajanın commit geçmişinden PRD'yi geriye dönük üretmesi, dokümantasyonu "işi başlatan belge"den "işi kayıt altına alan çıktı"ya dönüştürüyor; ekip beklemek zorunda kalmıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Kariyer çerçevesi değişmeden davranış değişmiyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>PM'ler spec yazma ve stakeholder koordinasyonu üzerinden değerlendirilip terfi ettiriliyorsa, koddan/prototipten başlamak riskli ve ödülsüz bir davranış olarak kalıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Webflow, PM kariyer çerçevesini doğrudan bu yeni çalışma şeklini ödüllendirecek şekilde yeniden yazarak, "building backwards"ı bir seçenek değil bir norm haline getirmiş.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Şirket çapında sabit bir ritim, tekil inisiyatifi kalıcı alışkanlığa çeviriyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>"Koddan başlama" tek tek ekiplerin kendi inisiyatifine bırakıldığında, yoğun dönemlerde ilk terk edilen pratik oluyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Haftalık "Builder Days" gibi şirket çapında sabit bir takvim bloğu, bu pratiği bireysel disipline değil organizasyonel bir ritme bağlıyor — böylece yoğunluk arttığında da kaybolmuyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">"Building backwards" yaklaşımının bir PM organizasyonuna uyarlanabileceği üç somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Yüksek belirsizlikli fikirler için "önce prototip" kuralı</div>
+    <p>Belirsizliği yüksek bir fikir için PRD yazımı ertelenir; bunun yerine küçük bir çalışan prototip/kod parçası üretilip gerçek kullanım veya kullanıcı testiyle doğrulanır. PRD, sadece fikir doğrulandıktan sonra ve mevcut koda dayanarak yazılır.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. PRD'yi commit/iş geçmişinden geriye dönük üretme</div>
+    <p>Bir özellik geliştirilip tamamlandıktan sonra, commit geçmişi/iş kayıtları analiz edilerek dokümantasyon otomatik veya yarı otomatik olarak oluşturulur; dokümantasyon işin önünde bir engel değil, arkasında bir kayıt olur.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. PM performans/terfi kriterlerine "koddan başlama" yeteneğini ekleme</div>
+    <p>PM değerlendirme kriterlerine, sadece spec/stakeholder yönetimi değil, bir fikri doğrudan çalışan bir prototipe dönüştürebilme yeteneği de eklenir; terfi tanımları buna göre güncellenir.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> PM'lerin temel düzeyde kod/prototip araçlarını (ör. AI destekli kodlama asistanları) kullanabilecek yetkinlik ve erişime sahip olması.</div>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

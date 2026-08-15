@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>PM'lere Claude Code'da Ürün Yargısı Süper Güçleri | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Aakash Gupta × Oji Udezue (The Growth Podcast) · 06 Ağustos 2026</div>
+  <h1>PM'lere Claude Code'da <em>Ürün Yargısı</em> Süper Güçleri</h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=Eo26_4JcyNA" target="_blank">youtube.com/watch?v=Eo26_4JcyNA</a> · 1 saat 4 dakika</p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Çoğu PM, Claude Code'a sadece "kodlama" skill'leri kurup orada duruyor. Eski Typeform/Calendly/Twitter CPO'su Oji Udezue, bunun bir üst katmanını gösteriyor: <strong>ürün yargısı ve iş yargısını</strong>, mühendislerin kullandığı aynı repoda çalışan Claude Code skill'leri haline getirmek. Videoda iki gerçek ürün fikri canlı olarak "scaffolding" skill'i ile test ediliyor — biri "viability gate"i geçiyor, diğeri elenip durduruluyor — sonra çıktı, bir odada PM'lerin bir PRD'yi incelediği gibi satır satır değerlendiriliyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Videoda kullanılan promptlar (Türkçe çeviri)</div>
+    <p><strong>1. Bağlam:</strong> Sıfırdan yeni bir ürün fikrini test etmeye başlarken.<br><em>"Yeni bir proje iskelesi oluştur (scaffold a new project)."</em> — tek satırlık bu komut, arka planda 11 adımlık bir iş akışını tetikliyor.</p>
+    <p style="margin-top:14px;"><strong>2. Bağlam:</strong> İkinci bir fikri (Standup Zero) viability gate'ten geçirmek için.<br><em>"İskelelendirme (scaffolding) skill'ini yeni bir problem üzerinde çalıştır. Bu repo içinde bunun için yeni bir klasör kullan... Slack yorumlarını kullanan ve günlük stand-up özeti oluşturan 'Standup Zero' adlı bir proje için bir şeyler inşa et."</em></p>
+    <p style="margin-top:14px;"><strong>3. Bağlam:</strong> Mevcut bir ürüne yeni özellik fikrini test ederken.<br><em>"Bir özelliği değerlendir (vet a feature)."</em> — mevcut ürünlere eklenecek özellik fikirlerini anti-pattern'lere karşı test eden ve backlog'daki diğer işlerin fırsat maliyetine göre puanlayan skill.</p>
+    <p style="margin-top:14px;"><strong>4. Bağlam:</strong> Koda geçmeden önce etkileşim modelini netleştirmek için.<br><em>"Code Memo nasıl görünmeli? Değer sağlayan temel etkileşim modelini oturtmak istiyorum. Önce Code Memo ile etkileşime giren kullanıcı hakkında bana sorular sorabilir misin, ardından birlikte bir dizi prototip üretelim mi?"</em></p>
+    <p style="margin-top:14px;"><strong>5. Bağlam:</strong> Fikri gerçek kullanıcılarla doğrulamak için araştırma planı çıkarırken.<br><em>"Müşteri keşfi haftası (customer discovery week) skill'lerini çalıştırarak müşteri keşif planımı geliştirmeni istiyorum."</em></p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>PM ekipleri için doğrudan transfer edilebilir bir model: kodlama skill'lerinin ötesine geçip <strong>ürün yargısını da (viability gate, vet-a-feature, müşteri keşfi planı) Claude Code içinde tekrarlanabilir bir skill haline getirmek.</strong> Özellikle yeni özellik/proje önerilerinin ilk elemesini standartlaştırmak, PM'ler arası tutarsız değerlendirmeyi azaltabilir — ama Oji'nin de vurguladığı gibi çıktı asla göz ardı edilmeden, PM tarafından satır satır denetlenmelidir.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Darboğaz mühendislikten PM'e kaydı</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Erken benimseyen alışkanlıklarına sahip geliştiriciler Claude Code ile hızla hızlanıyor; ancak ürün yargısı ve orchestration bu hıza aynı oranda yetişmiyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Mühendisler artık kod değil, PM kararlarını bekliyor. Herhangi bir organizasyonda benzer bir risk var: geliştirme hızı arttıkça PRD/önceliklendirme onay süreçleri asıl darboğaz haline gelebilir — viability gate benzeri bir ön-elek bu riski azaltabilir.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Viability gate, LLM'lerin doğal "hayır diyememe" eğilimini dengeliyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>LLM'ler bir fikri neredeyse hiç doğrudan reddetmiyor; her zaman "olabilir" havasında ilerlemeye devam ediyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Skill, problem netliği/aciliyeti, hedef kullanıcı tanımı, rekabet, farklılaşma, teknik uygulanabilirlik ve gelir olmak üzere 6 boyutta puanlıyor; 3 zayıf puan çıkarsa doğrudan "dur" tavsiyesi veriyor. Herhangi bir ekipte yeni bir iç araç/özellik önerisi için benzer bir "önce gate'ten geçir" adımı, zayıf fikirlerin geliştirme kapasitesine ulaşmadan elenmesini sağlayabilir.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Gerçek bir fikir (Standup Zero) canlı olarak elendi</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Slack yorumlarından günlük stand-up özeti çıkaran fikir, kalabalık bir rekabet alanına giriyor ve bu kalabalık, farklılaşmanın zaten zayıf olan puanını daha da aşağı çekiyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Gate kararı "gözü açık ilerle" değil, doğrudan "dur" oldu — kod yazılmadan önce bunu bilmek asıl kazanç. Herhangi bir yeni özellik önerisi de aynı şekilde "rakip + farklılaşma" testinden geçirilip, zayıfsa geliştirme öncesi durdurulabilir.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. LLM pazar araştırması sadece bir başlangıç noktası (%60-70)</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Web search tabanlı otomatik pazar/rekabet araştırması hızlı ama eksik; bahsedilen araçların güncel mi yoksa artık kullanılmıyor mu olduğunu ayırt edemiyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Oji, çıktıyı asla olduğu gibi kabul etmeyip gerçek kaynaklarla çapraz kontrol yapılmasını öneriyor — bu "ilk güvenilirlik taraması". PM'lerin de otomatik rakip/pazar analizlerini (ör. Dispatch benzeri otomasyonlarla) ham veri değil, ilk taslak olarak ele alması gerekir.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">5. UYARI — Merkezi governance olmadan skill'ler dağınıklaşır</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Her ekip/kişi kendi skill versiyonunu oluşturursa (forked skills), öğrenilenler birikmez, kurumsal tutarlılık kaybolur.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Öneri: merkezi bir CLAUDE.md/skill kütüphanesi, org'un SDLC'sine uyarlanmış artifact'lar, öğrenimlerin merkeze geri aktığı bir yapı. PM skill'leri (viability gate, vet-a-feature vb.) dağınık deneylerden önce merkezi bir standarda bağlanmalı; veri gizliliği ve güvenlik onayı da bu merkezi sürecin parçası olmalı.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Videoda canlı olarak uygulanan "scaffolding + viability gate" akışının adım adım inşası, ardından PM ekipleri için uyarlanabilecek üç ek senaryo.</p>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Scaffolding + Viability Gate akışı — adım adım nasıl inşa edildi</div>
+    <div class="step-list">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body"><h4>Tek satırlık komutla tetikleme</h4><p>Oji, Claude Code'a sadece "yeni bir proje iskelesi oluştur" yazıyor; bu, arkasında 11 adımlık bir orchestration akışını (master SKILL.md → alt skill'ler) başlatan tek komut.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body"><h4>Bağlam toplama</h4><p>Skill, proje tipini ve iş problemini netleştirmek için birkaç soru soruyor.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body"><h4>Viability Gate — 6 boyutlu puanlama</h4><p>Problem netliği/aciliyeti, hedef kullanıcı tanımı, rekabet, farklılaşma, teknik uygulanabilirlik ve gelir potansiyeli puanlanıyor. İlk fikir (Code Memo): 0 zayıf, 3 orta, 3 güçlü → geçti.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body"><h4>Web search ile pazar araştırması</h4><p>Rakipler, fiyatlandırma ve sektör trendleri otomatik taranıyor — ama Oji bunun "%60-70 doğru, gerisi manuel kontrol" olduğunu vurguluyor.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body"><h4>PRD / Ürün Brief üretimi</h4><p>Gate'i geçen fikir için otomatik bir ürün brief'i yazılıyor; Oji bunu bir PRD inceleme toplantısındaki gibi satır satır okuyor.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body"><h4>Kod iskeletinin kurulması</h4><p>Projeye özel bir CLAUDE.md, klasör yapısı, test klasörü, CI/CD, .gitignore'da secrets ve zaman içindeki hataları kataloglayan bir bug log otomatik oluşturuluyor.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">7</div>
+        <div class="step-body"><h4>İkinci fikirle gate'i tekrar test etme</h4><p>Aynı akış "Standup Zero" için tekrarlanıyor; bu kez kalabalık rekabet + zayıf farklılaşma nedeniyle gate "dur" kararı veriyor — kod hiç yazılmadan.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Mevcut ürüne özellik ekleme değerlendirmesi (Vet a Feature)</div>
+    <p>Sıfırdan yeni proje yerine, mevcut bir ürüne eklenecek tek bir özellik fikri "vet a feature" skill'i ile anti-pattern'lere karşı test ediliyor ve backlog'daki diğer işlerin fırsat maliyetine göre puanlanıyor. Mevcut ürünlere gelen özellik taleplerinin ilk elemesi için doğrudan uygulanabilir.</p>
+  </div>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Koda geçmeden önce prototip ve müşteri keşfi</div>
+    <p>Gate'i geçen fikir doğrudan kodlanmıyor; önce etkileşim modeli netleştiriliyor ("Code Memo nasıl görünmeli?" promptuyla), sonra "customer discovery week" skill'i ile bir müşteri keşif planı çıkarılıyor. Skill, en az 5 gerçek hedef kişiyle görüşme şartı koyuyor, aksi halde pazara erişimin eksik kaldığını belirtiyor.</p>
+  </div>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Kurumsal yaygınlaştırma — merkezi CLAUDE.md governance'ı</div>
+    <p>Skill'ler tek bir kişide/ekipte kalmıyor; merkezi bir CLAUDE.md ve skill kütüphanesi üzerinden organizasyonun SDLC'sine uyarlanıp tüm PM'lere dağıtılıyor, öğrenimler merkeze geri besleniyor. Bu proje (pm-ai-dashboard) gibi merkezi bir CLAUDE.md yapısı, PM skill'lerinin ekipler arasında tutarlı şekilde yaygınlaştırılması için model olabilir.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Değerlendirme ölçütü:</strong> Yaygınlaştırma kararı, skill çıktısının PM tarafından ne sıklıkla düzeltildiği (denetim oranı) ve zaman kazancı üzerinden verilmeli.</div>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

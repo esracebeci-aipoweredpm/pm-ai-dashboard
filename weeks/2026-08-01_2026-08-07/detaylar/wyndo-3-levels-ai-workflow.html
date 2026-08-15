@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>AI İş Akışlarının 3 Seviyesi: Chat'ten Agentic Workspace'e | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Alpha Work × Wyndo (AI Maker) · 04 Ağustos 2026</div>
+  <h1>AI İş Akışlarının 3 Seviyesi: <em>Chat'ten Agentic Workspace'e</em></h1>
+  <p class="meta">Kaynak: <a href="https://alphawork.substack.com/p/understanding-the-3-levels-of-ai" target="_blank">alphawork.substack.com/p/understanding-the-3-levels-of-ai</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Wyndo, profesyonellerin AI ile çalışma biçimini üç seviyeye ayırıyor: izole bir chat penceresinde manuel kopyala-yapıştırla ilerleyen Level 1, AI'ın dosya/takvim/notlara doğrudan bağlandığı Level 2 ve AI'ın tek bir komutla birden fazla aracı zincirleyerek uçtan uca çalıştığı Level 3 (agentic workspace). Çoğu bilgi işçisi Level 1'de sıkışıp kalıyor ve her seferinde aynı bağlamı yeniden yazıyor ("copy-paste tax"); asıl kazanç ise sistemi işin zaten yaşadığı yere taşıyıp tekrar eden görevleri tek bir komuta dönüştürmekten geliyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Üç seviye ve somut örnekler</div>
+    <p>Level 1: ChatGPT/Claude/Gemini'nin browser sekmesinde izole kullanımı. Level 2: Notion AI, Gemini Sidebar, Claude Code gibi araçların dosya/e-posta/takvime doğrudan erişmesi — fikir getirilir, ilgili dokümanlar otomatik çekilir, taslak geri kaydedilir. Level 3: Wyndo'nun günlük akışı — sabah `/morning-briefing` komutu görev listesini, takvimi ve e-postayı tarayıp tek sayfalık özet çıkarıyor; `/research` komutu bir araç değerlendirmesini bir günden 20 dakikaya indiriyor; `/repurpose-newsletter` komutu tek bir yazıyı Substack Notes, LinkedIn ve Twitter içeriğine dönüştürüyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>AI çalıştırma (execution) hızını artırdıkça, PM disiplininden gelen <strong>plan yazma ve sorunu net artiküle etme becerisi</strong> daha da değerli hale geliyor: açık bir PRD (mimari, davranışlar, kullanıcı yolculuğu, edge case'ler) AI'ın üretim kalitesinde çıktı vermesini sağlıyor, net tanımlanmış bir hata ("ne bekleniyordu, ne oldu, kullanıcı deneyimi nasıl bozuldu") ise doğru debug'ı mümkün kılıyor. Kısacası AI'ın hızlandırdığı dünyada PM'in kattığı değer, artık çalıştırmak değil yargı ve çerçeveleme.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Copy-paste tax: Level 1'in gizli maliyeti</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>AI izole bir sekmede yaşadığında kullanıcı her oturumda bağlamı elle yeniden yazmak zorunda kalıyor — notları arayıp yapıştırmak, sonucu başka bir dokümana taşımak, hedef kitleyi yeniden açıklamak.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Kullanıcı fiilen "bacaklı bir context window"a dönüşüyor; zaman AI'ın hızından değil, bağlam taşıma işinden kayboluyor. PM ekiplerinde de aynı örüntü görülür: her araç için ayrı ayrı context yazan bir ekip, aracın hızından bağımsız olarak yavaş kalır.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. AI'ı işin zaten yaşadığı yere taşımak</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Ayrı bir AI aracına geçmek başlı başına bir bağlam anahtarı (context switch) gerektiriyor; oysa iş zaten Notion, Google Docs veya markdown dosyalarında yürüyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Notion AI, Gemini Sidebar veya Claude Code gibi entegre araçlarla AI'ı mevcut ortama getirmek, Level 2'nin copy-paste sorununun büyük kısmını tek başına çözüyor — yeni bir alışkanlık öğretmek yerine mevcut alışkanlığa AI eklemek.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Prompt'tan sisteme geçiş</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Aynı karmaşık talimat (ör. haftalık brifing formatı) her seferinde yeniden yazıldığında hem zaman kaybediyor hem de tutarsızlaşıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Wyndo bu talimatı `/morning-briefing` gibi tek bir komuta dönüştürüyor; tekrar eden her iş akışı bir kez sistemleştirildiğinde, sonraki her çalıştırma sıfır yeniden yazma maliyetiyle tekrarlanabiliyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Extraction yerine "thinking partner" yaklaşımı</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>"Bana şunun hakkında yaz" tarzı çıkartma (extraction) promptları AI'ı bir üretim makinesine indirgiyor ve kullanıcının kendi düşüncesini geliştirmesine hizmet etmiyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Yarım kalmış bir taslağı getirip "en zayıf argümanım hangisi, kim buna en sert itiraz eder" diye sormak, AI'ı bir ortağa dönüştürüyor. Wyndo'nun vurgusu: "Gerçek değer aldığın çıktı değil, istediğini artiküle etmeye çalışırken kendi düşüncene olan etkisi."</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">5. Tool fatigue filtresi ve PRD disiplini</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Onlarca yeni AI aracını denemek, hiçbiri gerçek haftalık iş akışına oturmadığında sadece yorgunluk üretiyor; aynı şekilde AI'a belirsiz bir görev tarif etmek düşük kaliteli çıktı üretiyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Basit filtre — "bu, gerçek haftalık akışımda bir yere mi oturuyor?" — ve PM disiplininden gelen açık PRD yazma alışkanlığı (mimari, davranış, kullanıcı yolculuğu, edge case) birlikte çalışıyor: biri hangi aracın kalacağına, diğeri o araca ne kadar iyi görev tarif edildiğine karar veriyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Yazıdaki üç seviyeli çerçevenin bir PM'in kendi haftalık iş akışına uygulanabileceği dört somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Tekrar eden bir raporu tek komutlu bir brifinge dönüştürme</div>
+    <p>Her hafta elle hazırlanan durum özeti, öncelik listesi veya paydaş güncellemesi; görev listesi, takvim ve e-posta gibi kaynakları tarayıp tek sayfalık bir özet üreten tek bir komuta (`/morning-briefing` benzeri) dönüştürülür. Talimat bir kez yazılır, sonraki her çalıştırma sıfır yeniden yazma maliyetiyle tekrarlanır.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Araç/vendor değerlendirmesini hızlandıran bir araştırma komutu kurma</div>
+    <p>Yeni bir araç veya vendor değerlendirilirken web araştırması, sosyal medya sinyali ve video içeriklerini tarayıp yapılandırılmış bir özet çıkaran bir araştırma komutu kurulur; değerlendirme süresi günler yerine dakikalar mertebesine iner.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Extraction promptlarını "blind-spot sorgulama" promptlarıyla değiştirme</div>
+    <p>Bir strateji notu veya PRD taslağı AI'a "şunu yaz" yerine "bu taslakta ne eksik, bu yaklaşıma en sert kim itiraz eder, hangi hedef kitle bunu nasıl okur" gibi sorularla getirilir; amaç bitmiş bir metin almak değil, kendi argümanındaki zayıf noktaları erken görmektir.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Yeni araçları "gerçek haftalık akışa oturuyor mu" filtresinden geçirme</div>
+    <p>Ekibe önerilen her yeni AI aracı, tanıtılmadan önce "bu, mevcut haftalık iş akışımızdaki hangi adımın yerini alıyor veya onu hızlandırıyor" sorusuyla test edilir; birkaç ay sonra hâlâ kullanılmayan araçlar elenir, gerçekten yer edinen tek bir araca odaklanılır.</p>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

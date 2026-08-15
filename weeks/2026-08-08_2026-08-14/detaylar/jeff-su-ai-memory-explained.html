@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>AI Memory'yi Anlamak: Üç Seviyeli Bir Çerçeve | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Jeff Su · 12 Ağustos 2026</div>
+  <h1>AI Memory'yi Anlamak: Üç Seviyeli Bir <em>Çerçeve</em></h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=cEEw1AbeysI" target="_blank">youtube.com/watch?v=cEEw1AbeysI</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Jeff Su, AI araçlarındaki memory tartışmasının yanlış soru etrafında döndüğünü savunuyor: asıl mesele AI'ın bir şeyi hatırlayıp hatırlamadığı değil, neyin nerede saklandığına ve ne zaman geri geldiğine kimin karar verdiği. "Daha iyi memory" aslında "daha iyi context management" anlamına geliyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Üç seviye</div>
+    <p><strong>Global memory:</strong> hesap düzeyinde, rol/tercih/tekrarlayan hedefler gibi geniş gerçekleri saklar ama her proje detayını her chat'e güvenle taşıyamaz. <strong>Project memory:</strong> tek bir iş akışına bağlı context; dosyaları/konuşmaları bir arada tutar ama AI hâlâ neyi ne zaman göstereceğine kendisi karar verir, eksik/bayat bilgi riski kalır. <strong>Kullanıcının kendi sistemi:</strong> AI'ın çalışmadan önce okuduğu, düzenlenebilir dosyalara dayalı bir yapı — neyin nerede saklandığını kullanıcı belirler, AI rutin işi yürütür.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Sürekli/tekrarlayan işlerde project memory'yle başlamak yeterli. Eksik veya bayat bağlam belirgin şekilde zaman kaybettirmeye başladığında, görünür, düzenlenebilir ve araçlar arasında taşınabilir kendi dosya sistemine geçmek; gizli/opak memory katmanlarına güvenmekten daha tutarlı sonuç veriyor.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. "Daha iyi memory" yanlış çerçeve</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Tartışma genelde AI'ın bir şeyi hatırlayıp hatırlamadığı üzerinden yürütülüyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Asıl soru neyin saklandığı, nerede saklandığı ve ne zaman geri çağrıldığı — yani memory bir depolama sorunu değil bir context management sorunu.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Global memory rahat ama kırılgan</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Hesap düzeyindeki memory rol/tercih gibi kalıcı gerçekleri saklamakta iyi, ama her proje detayını güvenle her konuşmaya taşıyamıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Stabil, genel özellikler için uygun kalıyor; proje-özel, hızlı değişen bilgi için yetersiz kalıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Görünür/düzenlenebilir kendi sistemi, opak memory katmanlarından daha güvenilir</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Project memory'de bile AI hangi bilgiyi ne zaman göstereceğine kendi karar veriyor, bu da eksik/bayat bağlam riskini sürdürüyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Kullanıcının kendi düzenlediği, AI'ın çalışmadan önce okuduğu dosyalar; doğruluk ve güncellik kritik olduğunda ve araçlar arası taşınabilirlik gerektiğinde en sağlam temeli sağlıyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Üç seviyeli memory çerçevesinin bir PM'in AI araçlarını günlük kullanımına uyarlanabileceği üç somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Tekrarlayan bir işe project memory ile başlama</div>
+    <p>Yeni bir sürekli iş akışı (ör. haftalık rapor, tekrarlayan bir analiz) için önce mevcut project-memory özelliğiyle başlanır; dosyalar ve konuşmalar tek bir project altında tutulur.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Bayat/eksik bağlam maliyeti görünür hale geldiğinde kendi sistemine geçme</div>
+    <p>Project memory'nin unuttuğu veya yanlış hatırladığı bilgiyi düzeltmek her seferinde belirgin bir zaman kaybına yol açmaya başladığında, kullanıcının kendi düzenlediği ve AI'ın her çalışmadan önce okuduğu bir dosya yapısına geçilir.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Kritik/hassas bağlamı opak memory katmanına bırakmama</div>
+    <p>Doğruluğun ve güncelliğin kritik olduğu bilgi (ör. güncel bir sözleşme durumu, bir müşterinin son talebi) hesap/proje düzeyindeki gizli memory katmanına değil, görünür ve elle güncellenen bir dosyaya yazılır.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> —</div>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>
