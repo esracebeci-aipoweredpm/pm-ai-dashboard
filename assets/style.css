@@ -191,11 +191,11 @@ strong { color: var(--text); }
 .meta .stat strong { color: var(--accent2); }
 .nav-chip .count { margin-left: 6px; font-size: 11px; opacity: 0.8; }
 .section-sub { color: var(--muted); font-size: 14px; margin-bottom: 28px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
-.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; align-items: stretch; }
 .card.score-5 { border-color: var(--box-border); background: linear-gradient(135deg, var(--surface), #eef1fb); }
 .card.clickable { cursor: pointer; }
 .card.clickable:hover { border-color: var(--accent); background: var(--surface2); transform: translateY(-2px); }
-.card { position: relative; display: flex; flex-direction: column; }
+.card { position: relative; display: flex; flex-direction: column; height: 100%; }
 .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; gap: 10px; }
 .card-source { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1.2px; flex: 1; }
 .score-badge { font-size: 10px; font-weight: 700; letter-spacing: 1px; padding: 3px 8px; border-radius: 6px; background: var(--surface2); color: var(--muted); border: 1px solid var(--border); white-space: nowrap; }
