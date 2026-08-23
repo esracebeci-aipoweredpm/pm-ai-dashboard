@@ -41,6 +41,26 @@
           "detail_slug": "willem-ave-square-ai-agents-people-actually-use"
         }
       ]
+    },
+    {
+      "id": "substack",
+      "name": "Substack",
+      "cards": [
+        {
+          "source": "rari's Substack × rari",
+          "date": "12.08.2026",
+          "score": 3,
+          "title": "Graph Engineering: How to Build AI Agent Systems That Don't Break at Scale",
+          "url": "https://whrrari.substack.com/p/graph-engineering-how-to-build-ai",
+          "summary": "rari, AI ajan sistemlerinin doğrusal bir zincir yerine açık düğüm/kenar (graph) olarak tasarlanmasını öneriyor: her düğüme net bir girdi/çıktı sözleşmesi ve hata politikası (retry/fallback/escalate) tanımlamak, bağımsız işleri paralelleştirmek, üretici ile doğrulayıcı rolleri ayırmak ve döngüleri ölçülebilir bir yakınsama koşuluyla sınırlamak. PM'ler için doğrudan bir workflow değil, ancak bir AI ajan özelliğinin üretime hazır olup olmadığını değerlendirirken mühendislik ekibine sorulacak somut soruları (hata politikası ne, state nasıl izleniyor, topoloji maliyeti nasıl belirliyor) çıkaran teknik bir referans.",
+          "tags": [
+            { "label": "Mimari", "color": "" },
+            { "label": "AI Agent", "color": "amber" }
+          ],
+          "has_detail": false,
+          "no_detail_note": "mühendislik odaklı teknik referans"
+        }
+      ]
     }
   ]
 }
