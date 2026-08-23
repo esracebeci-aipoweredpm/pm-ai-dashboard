@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Graph Engineering: Hangi Projede Gerekli? | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">rari's Substack × rari · 12 Ağustos 2026</div>
+  <h1>Graph Engineering: Hangi Projede <em>Gerekli</em>?</h1>
+  <p class="meta">Kaynak: <a href="https://whrrari.substack.com/p/graph-engineering-how-to-build-ai" target="_blank">whrrari.substack.com/p/graph-engineering-how-to-build-ai</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>rari, AI ajan sistemlerinin ölçekte neden yavaşlayıp öngörülemez ve pahalı hale geldiğini, çoğu ekibin bir iş akışını tek bir doğrusal zincir ("adım 1 → adım 2 → adım 3") olarak tasarlamasına bağlıyor. Öneri, iş akışını açık düğümler (node) ve kenarlar (edge) olan bir grafik olarak tanımlamak: her düğüme net bir görev ve sözleşme vermek, bağımsız işleri paralel çalıştırmak, hataları merkezi değil düğüm bazında yönetmek. Bu, bir AI ajan projesinin "demo düzeyinde" mi yoksa "üretimde güvenilir" mi olduğunu ayıran temel mimari fark.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Dört temel grafik şekli</div>
+    <p>rari, çoğu ajan iş akışının şu dört kalıptan birine (veya birleşimine) indirgenebileceğini savunuyor: <strong>chain</strong> (sıralı, her adım öncekine bağımlı), <strong>diamond</strong> (bir noktadan paralel dallara ayrılıp tekrar birleşen), <strong>router</strong> (girdiye göre farklı bir alt-grafiğe yönlendiren) ve <strong>controlled cycle</strong> (net bir yakınsama koşuluyla sınırlı döngü, ör. "düzelt → doğrula → tekrar dene"). Bir projenin karmaşıklığı arttıkça bu dört şekil birleştirilerek daha büyük bir grafiğe dönüşüyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Düğüm sözleşmesi (node contract)</div>
+    <p>Her düğüm; girdi şeması, çıktı şeması ve hata durumunu (ör. <code>"failure": "no_primary_source_found"</code>) açıkça tanımlayan küçük bir sözleşmeye bağlanıyor. Bu, bir düğümün diğerlerinden bağımsız olarak test edilip değiştirilebilmesini ve bir hatanın tüm sistemi değil yalnızca ilgili düğümü etkilemesini sağlıyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Bir AI ajanı projesini kapsamlarken sorulacak soru "hangi promptu yazacağız" değil, "bu iş hangi grafik şekline uyuyor ve hangi adımlar gerçekten birbirine bağımlı, hangileri paralel çalışabilir" olmalı. Bu ayrım, projenin maliyetini, güvenilirliğini ve hangi noktalarda insan onayı gerektiğini baştan netleştiriyor.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Sıralama ile bağımlılık karıştırılıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir iş akışı yazılırken adımlar genellikle akla geldikleri sırayla diziliyor; bu sıralama, adımların birbirine gerçekten bağımlı olduğu anlamına gelmiyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Hangi adımların birbirinin çıktısını beklemesi gerektiğini, hangilerinin bağımsız çalışabileceğini ayırmak, gereksiz yere sıralı (ve yavaş) çalışan bir sistemi paralelleştirilebilir hale getiriyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Bağımsız işler paralel çalıştırılabilir</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>"Pazar verisi topla → repoyu incele → rakip fiyatlandırmasını kontrol et" gibi birbirine bağımlı olmayan görevler sırayla çalıştırıldığında, toplam süre üç görevin toplamı kadar uzuyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Bu görevleri bir "diamond" şeklinde eş zamanlı çalıştırıp sonunda birleştirmek, toplam süreyi en yavaş tek görevin süresine indiriyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Döngüler yakınsama koşulu olmadan tehlikeli</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir ajana "iyi olana kadar tekrarla" gibi belirsiz bir talimat vermek, sistemin sonsuz döngüye girmesine veya gereksiz yere çok fazla kaynak (token/maliyet) harcamasına yol açabiliyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Bir döngüye maksimum iterasyon sayısı, token bütçesi ve ölçülebilir bir durdurma koşulu (ör. "iki tur üst üste yeni bulgu yok") tanımlamak, döngüyü öngörülebilir ve maliyeti sınırlı hale getiriyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Üretici ve doğrulayıcı aynı düğüm olmamalı</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir ajanın kendi ürettiği çıktıyı yine kendisinin onaylaması, insan gözden geçirmesinde olduğu gibi bir "kör nokta" yaratıyor — kendi hatasını görme ihtimali düşük.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Üretim ve doğrulama için ayrı düğümler/roller tanımlamak, doğrulayıcının üreticinin varsayımlarını miras almadan bağımsız bir kontrol yapmasını sağlıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">5. Topoloji, doğrudan bir maliyet modeli</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir grafikteki her düğüm bir model çağrısı anlamına geldiğinden, gereksiz yere karmaşık/geniş bir grafik tasarlamak (her adım için güçlü ve pahalı bir model kullanmak dahil) maliyeti orantısız şekilde artırıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Basit/mekanik adımlara ucuz modelleri, karmaşık sentez/karar gerektiren düğümlere güçlü modelleri yönlendirmek, aynı grafik yapısıyla maliyeti önemli ölçüde düşürebiliyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Bir PM'in önündeki AI ajan fikrinin gerçekten bir "graph" mimarisi gerektirip gerektirmediğini değerlendirmesine yardımcı olacak, hangi proje tiplerinin hangi grafik şekline karşılık geldiğini gösteren beş somut senaryo.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Çok kaynaklı araştırma/rapor ajanları → "diamond" şekli</div>
+    <p>Rakip analizi, pazar araştırması veya due-diligence gibi birden fazla bağımsız kaynaktan (web, iç dokümanlar, geçmiş raporlar) veri toplayıp tek bir sentez raporunda birleştiren projeler, klasik aday. Her kaynak ayrı bir düğümde paralel taranır, sonunda tek bir "sentezleyici" düğümde birleştirilir — sıralı bir zincirde bu iş kaynak sayısıyla doğru orantılı yavaşlar.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Kaynakların birbirinden gerçekten bağımsız olması (biri diğerinin sonucunu beklemiyor olmalı).</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. İçerik/doküman üretim hatları → "controlled cycle" + ayrı doğrulayıcı</div>
+    <p>Taslak oluşturup gözden geçiren, marka/uyum kurallarına göre düzelten ve yayına hazır hale getiren bir içerik üretim ajanı (ör. destek makalesi, pazarlama metni, PRD taslağı), üretici ve doğrulayıcıyı ayrı düğümlere koyup aralarında sınırlı sayıda "düzelt → doğrula" döngüsü kuran bir yapıya ihtiyaç duyar.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Doğrulama kriterlerinin (ör. bir stil rehberi, uyum checklist'i) net ve otomatik kontrol edilebilir olması.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Müşteri talebi/ticket sınıflandırma ve yönlendirme → "router" şekli</div>
+    <p>Gelen bir talebin türüne (fatura sorunu, teknik hata, özellik talebi) göre tamamen farklı bir alt iş akışına yönlendirilmesi gereken sistemler (destek otomasyonu, satış talebi triage'ı), her dalın kendi düğüm/hata politikasına sahip olduğu bir router yapısına uyar.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Talep türlerinin önceden tanımlı, birbirinden ayrık kategorilere ayrılabilmesi.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Riskli/geri alınamaz aksiyon içeren ajanlar → düğüm bazlı insan onayı</div>
+    <p>Bir ödeme başlatan, bir müşteriye taahhüt içeren e-posta gönderen veya bir üretim ortamına değişiklik uygulayan ajanlarda, riskli adım ayrı bir düğüm olarak izole edilip bu düğümün çıktısı otomatik olarak insan onayına (ESCALATE) yönlendirilir; geri kalan düşük riskli düğümler otomatik çalışmaya devam eder.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Hangi aksiyonların "geri alınamaz/yüksek riskli" sayıldığının PM ve ilgili paydaşlarca önceden tanımlanmış olması.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">5. Ne zaman graph GEREKMEZ: basit, tek-adımlı işler</div>
+    <p>Tek bir girdi alıp tek bir dönüşüm uygulayan basit araçlar (ör. bir metni özetleyen, bir formatı dönüştüren tekil bir asistan), grafiğe hiç ihtiyaç duymaz. rari'nin kendi tavsiyesi: önce basit bir döngüyle (tek düğüm, tekrar eden çağrı) başlanmalı; bağımlılıklar/paralellik ihtiyacı ortaya çıktığında grafiğe geçilmeli. Aksi halde gereksiz mimari karmaşıklığı (over-engineering) projeye erken yük bindirir.</p>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>

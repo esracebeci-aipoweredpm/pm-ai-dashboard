@@ -73,8 +73,8 @@
             { "label": "Mimari", "color": "" },
             { "label": "AI Agent", "color": "amber" }
           ],
-          "has_detail": false,
-          "no_detail_note": "mühendislik odaklı teknik referans"
+          "has_detail": true,
+          "detail_slug": "rari-graph-engineering-ai-agent-systems"
         },
         {
           "source": "Technically Curious × Claire Morrison & Katie Fifer",
