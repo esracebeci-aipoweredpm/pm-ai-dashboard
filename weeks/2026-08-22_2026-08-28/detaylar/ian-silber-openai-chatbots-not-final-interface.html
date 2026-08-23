@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Chatbot'lar Nihai Arayüz Değil | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Lenny's Podcast × Ian Silber (Head of Design, OpenAI) · 16 Ağustos 2026</div>
+  <h1>Chatbot'lar Nihai Arayüz <em>Değil</em></h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=BV0hy6NET-U" target="_blank">youtube.com/watch?v=BV0hy6NET-U</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>OpenAI'de Head of Design olan Ian Silber, metin tabanlı sohbet kutusunun yapay zeka ürünlerinin ulaştığı son nokta değil, sadece bir başlangıç zemini olduğunu savunuyor. Ona göre transkript şimdiden düz metnin ötesine geçiyor: e-posta ve doküman gibi çıktılar için doğrudan düzenlenebilir yazı blokları, tek dokunuşla sorulabilen takip soruları ve görsel üretime özel arayüz parçaları bunun ilk örnekleri. Bir sonraki ufuk ise bağlama duyarlı (context-aware) affordance'lar — arayüzün, kullanıcının o anki niyetine göre kendini yeniden şekillendirmesi.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Tasarım, mühendislikteki AI sıçramasını henüz yakalayamadı</div>
+    <p>Silber, mühendislik ekiplerinin yapay zeka araçlarıyla üretkenlikte büyük bir sıçrama yaşadığını, ancak tasarım ekiplerinin aynı kaldıraçtan henüz aynı ölçüde faydalanamadığını belirtiyor. Bunu bir eksiklik değil, tasarımcılar için hâlâ keşfedilmemiş bir fırsat alanı olarak çerçeveliyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Bir AI özelliğinin arayüz tartışmasını "sohbet kutusuna ne ekleyelim?" sorusundan "bu etkileşim gerçekten sohbet mi olmalı, yoksa düzenlenebilir bir blok / tek dokunuşlu bir aksiyon / bağlama duyarlı bir araç mı olmalı?" sorusuna kaydırmak gerekiyor. Roadmap'te "chat deneyimini iyileştirme" gibi genel bir başlık yerine, hangi etkileşimin hangi arayüz kalıbına (blok, follow-up, bespoke tool, context-aware affordance) taşınacağını somut olarak tanımlamak, PM'in AI özelliği tasarımını daha isabetli önceliklendirmesini sağlıyor.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Sohbet, tavan değil taban</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Çoğu AI ürünü, chat arayüzünü "varsayılan ve yeterli" bir çözüm olarak benimseyip üzerine düşünmeyi bırakıyor; oysa metin tabanlı sohbet sadece en düşük ortak paydalı, hızlı kurulan bir etkileşim biçimi.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>PM'ler her yeni AI özelliğini otomatik olarak sohbet kutusuna eklemek yerine, o etkileşim için gerçekten en uygun arayüz biçiminin ne olduğunu ayrıca sorgulamalı.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Transkript, düzenlenebilir bloklara evriliyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>E-posta veya doküman gibi çıktıları düz metin olarak sunmak, kullanıcının sonucu kullanabilmesi için onu kopyalayıp başka bir araca taşımasını gerektiriyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Çıktıyı sohbet akışı içinde doğrudan düzenlenebilir bir blok olarak sunmak, kullanıcı ile nihai çıktı arasındaki adımı ortadan kaldırıyor ve AI'ı bir "öneri üreticisi"nden bir "çalışma alanı"na dönüştürüyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Tıklanabilir takip soruları, yeniden yazma yükünü azaltıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir yanıtı derinleştirmek için kullanıcının her seferinde yeni bir soruyu sıfırdan yazması, etkileşim maliyetini gereksiz yere artırıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Sistemin olası takip sorularını önceden önerip tek dokunuşla sorulabilir hale getirmesi, kullanıcının bilişsel yükünü azaltıp keşfi hızlandırıyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Mühendislik 10x oldu, tasarım henüz olmadı</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>AI araçları bugüne kadar en çok kod üretimi/otomasyon gibi somut, ölçülebilir çıktısı olan mühendislik işlerine uyarlandı; tasarımın daha çok muğlak, öznel bir süreç olarak görülmesi bu uyarlamayı geciktirdi.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>PM'ler ürün ekiplerinde AI yatırımını sadece mühendislik verimliliğine değil, tasarım/araştırma iş akışlarına da bilinçli olarak yönlendirmeli; bu, henüz doyuma ulaşmamış bir verimlilik alanı.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">5. "Just do less" — karmaşıklığı azaltmak asıl beceri</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>AI, yeni özellik/seçenek üretmeyi ucuzlattığı için ekipler bir arayüze giderek daha fazla kontrol ve seçenek ekleme eğilimine giriyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Silber'in tasarımcılarına verdiği tavsiye tam tersi yönde: özü yakalayıp gereksiz karmaşıklığı elemek. PM'ler için bu, bir AI özelliğinin başarısını "kaç yetenek eklendi" yerine "kaç adım/karar kullanıcıdan kaldırıldı" ile ölçmeyi öneriyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">"Sohbetin ötesi" bakış açısının bir AI özelliği tasarım/önceliklendirme sürecine uyarlanabileceği somut senaryolar.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Yeni bir AI özelliği için "doğru arayüz kalıbı" kontrolü</div>
+    <p>Bir AI özelliği tasarlanırken önce "bu bir sohbet mi, düzenlenebilir bir blok mu, tek dokunuşlu bir aksiyon mu, yoksa bağlama duyarlı bir affordance mı olmalı?" sorusu netleştirilir; özellik doğrudan mevcut chat arayüzüne eklenmeden önce bu ayrım yapılır.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Etkileşimin çıktısının (metin, görsel, karar) türünün ve kullanıcının onu nasıl kullanacağının önceden tanımlanmış olması.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. AI çıktısını "öneri" yerine "çalışma alanı" olarak tasarlama</div>
+    <p>AI'ın ürettiği e-posta, doküman veya rapor taslağı, kopyalanıp başka bir araca taşınması gereken düz metin yerine, doğrudan aynı arayüzde düzenlenip son haline getirilebilen bir blok olarak sunulur.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. "Kaç adım kaldırıldı" metriğini özellik değerlendirmesine ekleme</div>
+    <p>Bir AI özelliğinin başarı ölçütlerine, eklenen yetenek sayısının yanına, kullanıcının hedefine ulaşmak için attığı adım/verdiği karar sayısındaki azalmayı da ekleyerek "just do less" prensibini somut bir metriğe bağlama.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Tasarım ekibi için AI yatırımını mühendislikle dengeleme</div>
+    <p>Bir ürün ekibi AI araç yatırımını gözden geçirirken, sadece kod üretimi/otomasyon araçlarına değil, tasarımcıların araştırma-prototipleme-iterasyon döngüsünü hızlandıracak AI araçlarına da eşdeğer bütçe/zaman ayırıp ayırmadığını sorgular.</p>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>
