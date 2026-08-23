@@ -4,7 +4,8 @@
   "date_range_pill": "Ağustos 2026 / Hafta 4",
   "themes": [
     "<strong>Chat kutusu, AI arayüzlerinin tavanı değil tabanı.</strong> OpenAI'de Head of Design olan Ian Silber, sohbet arayüzünün yapay zeka ürünlerinin nihai formu olmadığını; transkriptin şimdiden düzenlenebilir yazı blokları ve tıklanabilir takip sorularıyla, gelecekte ise bağlama duyarlı (context-aware) araçlarla evrildiğini anlatıyor — PM'ler için ürün arayüzünü sohbet kutusunun ötesinde tasarlamayı önceliklendiren bir bakış açısı.",
-    "<strong>Soru-cevap chatbot'u kurmak kolay; güvenilir bir ajan kurmak değil.</strong> Square/Block'ta Global Head of Product olan Willem Avé, genel müdürlük modelini terk edip DRI (Directly Responsible Individual) tabanlı işlevsel bir yapıya geçişi ve gerçek iş çıktısı üreten (soru-cevap değil) bir ajan olan \"manager bot\" örneğini anlatıyor — PM'ler için hem organizasyon tasarımına hem AI ajan tasarımına dair somut bir çerçeve."
+    "<strong>Soru-cevap chatbot'u kurmak kolay; güvenilir bir ajan kurmak değil.</strong> Square/Block'ta Global Head of Product olan Willem Avé, genel müdürlük modelini terk edip DRI (Directly Responsible Individual) tabanlı işlevsel bir yapıya geçişi ve gerçek iş çıktısı üreten (soru-cevap değil) bir ajan olan \"manager bot\" örneğini anlatıyor — PM'ler için hem organizasyon tasarımına hem AI ajan tasarımına dair somut bir çerçeve.",
+    "<strong>Prompt engineering öldü, intent engineering önemli.</strong> Grace Clarke, tüm danışmanlık işini Claude ile yürütürken tek seferlik mükemmel promptlar yerine sürekli, konuşma tabanlı bir işbirliğini ve marka sesini koruyan versiyonlanmış \"skill\" dosyalarını öne çıkarıyor — PM'lerin kişisel AI kullanımını tek seferlik komutlardan kalıcı bir sisteme taşımasını öneren bir bakış açısı."
   ],
   "channels": [
     {
@@ -39,6 +40,21 @@
           ],
           "has_detail": true,
           "detail_slug": "willem-ave-square-ai-agents-people-actually-use"
+        },
+        {
+          "source": "How I AI × Grace Clarke",
+          "date": "07.08.2026",
+          "score": 5,
+          "title": "Claude Runs My Entire Business",
+          "url": "https://www.youtube.com/watch?v=o_eg2TtXAO0",
+          "summary": "AI öğretmeni ve eski pazarlama danışmanı Grace Clarke, tüm danışmanlık işini idari personel işe almadan Claude ile nasıl yürüttüğünü anlatıyor: saatlik çalışan bir \"pipeline operator\" ile kişiselleştirilmiş teklif/onboarding materyalleri üretip haftalık 20+ saatlik idari yükü ortadan kaldırıyor, Claude Cowork içinde kurduğu özel arayüzle bir aydır Gmail'i hiç açmadan e-postalarını yönetiyor. Temel prensibi \"prompt engineering öldü, asıl odaklanılması gereken intent engineering\" ve marka sesini korumak için versiyonlanmış \"skill\" dosyaları kullanmak; PM'ler/kurucular için önerisi, karmaşık otomasyonlara geçmeden önce günlük küçük bir zorlayıcı alışkanlıkla (ör. bir Slack hatırlatıcısıyla ekran görüntüsünü Claude'a atmak) AI ile çalışma refleksini oturtmak.",
+          "tags": [
+            { "label": "Yöntem", "color": "blue" },
+            { "label": "Otomasyon", "color": "amber" },
+            { "label": "Kişisel Prodüktivite", "color": "green" }
+          ],
+          "has_detail": true,
+          "detail_slug": "grace-clarke-how-i-ai-claude-runs-business"
         }
       ]
     },
