@@ -3,7 +3,8 @@
   "date_range_title": "22-28 Ağustos 2026",
   "date_range_pill": "Ağustos 2026 / Hafta 4",
   "themes": [
-    "<strong>Chat kutusu, AI arayüzlerinin tavanı değil tabanı.</strong> OpenAI'de Head of Design olan Ian Silber, sohbet arayüzünün yapay zeka ürünlerinin nihai formu olmadığını; transkriptin şimdiden düzenlenebilir yazı blokları ve tıklanabilir takip sorularıyla, gelecekte ise bağlama duyarlı (context-aware) araçlarla evrildiğini anlatıyor — PM'ler için ürün arayüzünü sohbet kutusunun ötesinde tasarlamayı önceliklendiren bir bakış açısı."
+    "<strong>Chat kutusu, AI arayüzlerinin tavanı değil tabanı.</strong> OpenAI'de Head of Design olan Ian Silber, sohbet arayüzünün yapay zeka ürünlerinin nihai formu olmadığını; transkriptin şimdiden düzenlenebilir yazı blokları ve tıklanabilir takip sorularıyla, gelecekte ise bağlama duyarlı (context-aware) araçlarla evrildiğini anlatıyor — PM'ler için ürün arayüzünü sohbet kutusunun ötesinde tasarlamayı önceliklendiren bir bakış açısı.",
+    "<strong>Soru-cevap chatbot'u kurmak kolay; güvenilir bir ajan kurmak değil.</strong> Square/Block'ta Global Head of Product olan Willem Avé, genel müdürlük modelini terk edip DRI (Directly Responsible Individual) tabanlı işlevsel bir yapıya geçişi ve gerçek iş çıktısı üreten (soru-cevap değil) bir ajan olan \"manager bot\" örneğini anlatıyor — PM'ler için hem organizasyon tasarımına hem AI ajan tasarımına dair somut bir çerçeve."
   ],
   "channels": [
     {
@@ -23,6 +24,21 @@
           ],
           "has_detail": true,
           "detail_slug": "ian-silber-openai-chatbots-not-final-interface"
+        },
+        {
+          "source": "Product School × Willem Avé (Global Head of Product, Square/Block)",
+          "date": "19.08.2026",
+          "score": 5,
+          "title": "Square Global Head of Product on How to Build AI Agents People Actually Use",
+          "url": "https://www.youtube.com/watch?v=s0XqhUFhOjo",
+          "summary": "Square/Block'ta Global Head of Product olan Willem Avé, şirketin genel müdürlük modelini terk edip organizasyonları müşteri sonuçları etrafında odaklayan, tek bir DRI'ın (Directly Responsible Individual) çapraz-fonksiyonel yetkiye sahip olduğu işlevsel bir yapıya geçme kararını anlatıyor. \"Manager bot\" demosuyla, bir küçük işletme sahibinin envanter/işgücü/satış gibi gerçek işleri hafıza ve bağlantı yönetimiyle uğraşmadan bir ajana devredebildiğini gösteriyor; \"soru-cevap chatbot kurmak artık kolay, küçük bir işletmenin gerçekten güvenebileceği bir ajan kurmak değil\" vurgusuyla, PM'lerin AI ajan tasarımını demo etkileyiciliğinden gerçek iş çıktısına kaydırmasını öneriyor.",
+          "tags": [
+            { "label": "Yöntem", "color": "blue" },
+            { "label": "Organizasyon", "color": "green" },
+            { "label": "AI Agent", "color": "amber" }
+          ],
+          "has_detail": true,
+          "detail_slug": "willem-ave-square-ai-agents-people-actually-use"
         }
       ]
     }

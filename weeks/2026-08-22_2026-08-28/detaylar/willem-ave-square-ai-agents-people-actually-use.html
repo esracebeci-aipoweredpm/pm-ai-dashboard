@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>İnsanların Gerçekten Kullandığı AI Ajanları | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Product School × Willem Avé (Global Head of Product, Square/Block) · 19 Ağustos 2026</div>
+  <h1>İnsanların Gerçekten <em>Kullandığı</em> AI Ajanları</h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=s0XqhUFhOjo" target="_blank">youtube.com/watch?v=s0XqhUFhOjo</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Square/Block'ta Global Head of Product olan Willem Avé, iki temel dönüşümü anlatıyor. İlki organizasyonel: şirket yaklaşık iki yıl önce genel müdürlük (general manager) modelini terk edip "organizasyonları müşteri sonuçları etrafında odaklandırdığınızda en iyi çıktıyı alırsınız" ilkesiyle tamamen işlevsel bir yapıya, tek bir DRI'ın (Directly Responsible Individual) çapraz-fonksiyonel yetkiye sahip olduğu bir modele geçti. İkincisi ürünsel: "manager bot" demosuyla, soru-cevap chatbot çağının geride kaldığını, asıl işin veri sentezleme ve gerçek iş çıktısı (menü mühendisliği analizi, işgücü tahmini, satış liderlik tablosu) üreten ajanlar kurmak olduğunu gösteriyor.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">"Manager bot" demosu</div>
+    <p>Manager bot, bir küçük işletme sahibinin (örnek: bir fırın) gerçek işleri —envanter takibi, işgücü planlaması, satış analizi— hafıza ve farklı sistemler arası bağlantı kurma derdine girmeden bir ajana devretmesini sağlıyor. Avé'nin vurgusu: "standart soru-cevap chatbot günleri geçti"; asıl değer, ajanın kullanıcı adına veriyi sentezleyip işe özgü çıktı üretebilmesinde.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Bir AI ajanı projesini değerlendirirken sorulacak soru "etkileyici bir demo yapabiliyor mu?" değil, "bir kullanıcı buna gerçekten güvenip gerçek bir işi devredebilir mi?" olmalı. Bu, ajan tasarımını yanıt kalitesinden çıktı güvenilirliğine (memory, sistem bağlantıları, tekrarlanabilirlik) taşıyan bir değerlendirme çerçevesi sunuyor.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Genel müdürlük modeli, çapraz-fonksiyonel gridlock yaratıyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Her ürün/bölge için ayrı bir genel müdürün bulunduğu yapılarda, kararlar birden fazla genel müdürün onayına bağlı kalıyor ve herhangi biri sessizce veto koyabiliyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Tek bir DRI'a çapraz-fonksiyonel yetki vermek, sessiz vetoları ortadan kaldırıp karar hızını artırıyor; PM'ler için organizasyon tasarımını "kim onaylıyor" değil "kim doğrudan sorumlu" sorusuna göre kurmayı öneriyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. Organizasyon, müşteri sonucu etrafında kurulmalı</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Fonksiyon veya ürün hattı etrafında kurulan organizasyonlar, ekipleri kendi iç metriklerini optimize etmeye yönlendirip müşteri sonucunu ikinci plana atabiliyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Yapıyı doğrudan müşteri sonucu etrafında kurmak, ekiplerin önceliklerini otomatik olarak hizalıyor; PM'ler roadmap tartışmalarını "hangi ekip" yerine "hangi müşteri sonucu" etrafında çerçeveleyebilir.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Soru-cevap chatbot, artık farklılaştırıcı değil</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir soruya metin yanıtı üreten chatbot kurmak günümüzde teknik olarak kolaylaştı; bu nedenle tek başına bir rekabet avantajı sağlamıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Asıl değer, ajanın veriyi sentezleyip işe özgü somut bir çıktı (rapor, tahmin, aksiyon) üretebilmesinde; PM'ler ajan roadmap'ini "daha iyi yanıt" değil "hangi işi bitiriyor" ekseninde tanımlamalı.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. Güvenilirlik, hafıza ve bağlantı yönetiminden geçiyor</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir ajan her etkileşimde bağlamı sıfırdan öğrenmek veya kullanıcıyı farklı sistemler arasında elle veri taşımaya zorlamak zorunda kaldığında, kullanıcı ona gerçek bir işi emanet edemiyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Ajanın hafızayı ve ilgili sistem bağlantılarını kendi başına yönetmesi, kullanıcının "her seferinde yeniden anlatma" yükünü kaldırıp ajana gerçek bir iş devredilebilir hale getiriyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">5. Sınırsız TAM, bir Kuzey Yıldızı olmadan işlenemez</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Bir AI ajanının teorik olarak hizmet edebileceği pazar (TAM) neredeyse sınırsız görünebiliyor; bu da ekiplerin odağını dağıtıp her senaryoyu aynı anda çözmeye çalışmasına yol açıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Somut bir müşteri profiline (ör. tek bir küçük işletme türü) odaklanan bir Kuzey Yıldızı belirlemek, sınırsız TAM'ı önce tek bir yerde derinlemesine çözülebilir, sonra genişletilebilir bir probleme indirgiyor.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">Organizasyon ve AI ajan tasarımı ilkelerinin bir PM'in kendi ekibine uyarlanabileceği somut senaryolar.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Çapraz-fonksiyonel kararlarda tek bir DRI belirleme</div>
+    <p>Birden fazla ekibin onayını gerektiren bir kararda, önceden hangi tek kişinin (DRI) nihai sorumlu olduğu netleştirilir; diğer ekipler görüş bildirir ama veto yetkisi taşımaz.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Karar sahipliğinin organizasyon şemasında değil, belirli bir sonuç/metrik etrafında tanımlanmış olması.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. AI ajanı kabul kriterini "iş bitirme"ye göre yazma</div>
+    <p>Bir AI ajanı özelliği tanımlanırken kabul kriteri "doğru yanıt veriyor mu" yerine "kullanıcının belirli bir işini (rapor, tahmin, aksiyon) baştan sona bitiriyor mu" olarak yazılır.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Ajan tasarımına hafıza ve bağlantı gereksinimini en baştan dahil etme</div>
+    <p>Bir ajan projesi kapsamlandırılırken, hangi geçmiş bağlamı hatırlaması ve hangi sistemlere (envanter, takvim, CRM vb.) bağlanması gerektiği, yanıt kalitesinden önce netleştirilir.</p>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Geniş bir AI fırsatını tek bir somut müşteri profiliyle sınırlama</div>
+    <p>"Herkes için" tasarlanan geniş kapsamlı bir AI ajanı fikri, önce tek bir dar müşteri profili (ör. belirli bir işletme türü/segment) için uçtan uca çözülür, ardından genişletme planı buradan türetilir.</p>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>
