@@ -59,6 +59,20 @@
           ],
           "has_detail": false,
           "no_detail_note": "mühendislik odaklı teknik referans"
+        },
+        {
+          "source": "Technically Curious × Claire Morrison & Katie Fifer",
+          "date": "10.08.2026",
+          "score": 5,
+          "title": "Life /goals: Delegate Substantial Work to AI",
+          "url": "https://technicallycurious.substack.com/p/life-goals-delegate-substantial-work",
+          "summary": "Technically Curious'ta Claire Morrison ve Katie Fifer, bir AI ajanına saatler süren kapsamlı bir işi (ör. üç aylık planlama sunumu) devretmek için \"/goal\" adını verdikleri altı adımlı bir yöntem paylaşıyor: ortak bağlam kurma, bunu net bir brief'e dönüştürme, AI'ın kullanıcının gördüğünü (ör. tarayıcı render'ı) görebilmesini sağlama, hedefi birlikte taslaklama, uzaklaşıp AI'ın çalışmasına izin verme ve sonucu yineleme. Vurguladıkları temel fark, sürekli müdahale yerine sonuç/kaynak/doğrulama/durdurma koşullarını net tanımlayıp AI'ın kendi çıktısını insan gibi denetleyebilmesini sağlamak; PM'ler için birkaç saatlik araştırma/analiz/sunum gibi işleri AI'a güvenle devretmenin somut bir çerçevesi.",
+          "tags": [
+            { "label": "Yöntem", "color": "blue" },
+            { "label": "Delegasyon", "color": "green" }
+          ],
+          "has_detail": true,
+          "detail_slug": "claire-katie-technically-curious-goal-delegation"
         }
       ]
     }
