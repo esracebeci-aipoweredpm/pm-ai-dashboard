@@ -3,106 +3,14 @@
   "date_range_title": "8-14 Ağustos 2026",
   "date_range_pill": "Ağustos 2026 / Hafta 2",
   "themes": [
-    "<strong>1. Trust, model kalitesinden çok arayüz kalıplarıyla kazanılıyor.</strong> Stripe'ta Head of Product Stephanie J. Neill, AI ürünlerinde güveni modeli daha akıllı yaparak değil; policy dosyasına dayalı yanıtlar, zorunlu kaynak gösterme (citation) ve düşük güven skorunu insana yönlendirme gibi somut ürün kalıplarıyla inşa etmenin gerektiğini anlatıyor.",
-    "<strong>2. Araştırma döngüsü haftalardan saatlere iniyor.</strong> Typeform'un AI moderatörlü Research Flow demosu, anket ölçeği ile mülakat derinliğini aynı çalışmada birleştirip içgörüyü gerçek zamanlı üreterek, kullanıcı araştırmasının PM'in karar hızını artık geciktirmeyebileceğini gösteriyor.",
-    "<strong>3. Spec'ten değil koddan başlamak, PM'in rolünü yeniden tanımlıyor.</strong> Webflow CPO'su Ben Haefele, PRD yazıp sonra kod yazdırmak yerine önce çalışan koddan başlayıp PRD'yi geriye dönük üretmeyi öneriyor; bu, PM kariyer çerçevesinden şirket ritmine kadar organizasyonu baştan tasarlamayı gerektiriyor.",
-    "<strong>4. Üretim ölçeklendi, karar verme ölçeklenmedi.</strong> Miro'dan Damir Dizdarević, Forrester verisiyle AI'ın içerik/artifact üretimini hızlandırdıkça ekip hizasızlığını da büyüttüğünü gösteriyor; çözüm olarak dağınık geri bildirim ve güncellemeleri tek bir agentic canvas akışında birleştirmeyi öneriyor.",
-    "<strong>5. \"Skill mi, agent mi?\" ayrımı GTM otomasyonunun ilk sorusu olmalı.</strong> Atlassian'dan Axel Sooriah, her AI otomasyon fikrini uygulamadan önce bunun tek seferlik bir skill mi yoksa sürekli çalışan bir agent mi olması gerektiğini sormayı öneriyor; bu ayrım, AI'ın nerede değer kattığını nerede ek iş yarattığını netleştiriyor.",
-    "<strong>6. PRD-tasarım-mühendislik döngüsü haftalardan aynı güne inebiliyor.</strong> Replit'ten Samuel Spitz, tıklanabilir prototip + dashboard + sunumu tek bir oturumda üreten beş adımlı bir iş akışıyla, PM'in bir fikri klasik spec döngüsü yerine doğrudan çalışan bir çıktı üzerinden ilerletmesini gösteriyor.",
-    "<strong>7. PM'in kendi ham verisi, bir analisti beklemeden yapılandırılmış çıktıya dönüşebiliyor.</strong> NotebookLM üzerine yazılan bir promt seti, destek ticket'ı/görüşme transkripti/rakip dokümanı gibi ham metinleri agentic research ve chat-to-deliverable kalıplarıyla doğrudan dashboard, anomali raporu veya sunuma çeviriyor.",
-    "<strong>8. PM'in kişisel AI kurulumu, tekli chat'ten kalıcı bir sisteme dönüşüyor.</strong> Claude Projects'i knowledge/instructions/prompts çerçevesiyle kurmak ve AI'ın memory'sini (global/project/kendi dosya sistemi) doğru seviyede yönetmek, PM'in her seferinde bağlamı yeniden anlatmasını, bir kez kurulup kullandıkça iyileşen kişisel bir sisteme taşıyor."
+    "<strong>PM'in kendi ham verisi, bir analisti beklemeden yapılandırılmış çıktıya dönüşebiliyor.</strong> NotebookLM üzerine yazılan bir promt seti, destek ticket'ı/görüşme transkripti/rakip dokümanı gibi ham metinleri agentic research ve chat-to-deliverable kalıplarıyla doğrudan dashboard, anomali raporu veya sunuma çeviriyor.",
+    "<strong>PM'in kişisel AI kurulumu, tekli chat'ten kalıcı bir sisteme dönüşüyor.</strong> Claude Projects'i knowledge/instructions/prompts çerçevesiyle kurmak ve AI'ın memory'sini (global/project/kendi dosya sistemi) doğru seviyede yönetmek, PM'in her seferinde bağlamı yeniden anlatmasını, bir kez kurulup kullandıkça iyileşen kişisel bir sisteme taşıyor."
   ],
   "channels": [
     {
       "id": "youtube",
       "name": "YouTube",
       "cards": [
-        {
-          "source": "Product School × Stephanie J. Neill (Head of Product, Stripe)",
-          "date": "05.08.2026",
-          "score": 5,
-          "title": "Framework for Building AI Products Users Can Trust",
-          "url": "https://www.youtube.com/watch?v=7-u4483zm6A",
-          "summary": "Stripe'ta Head of Product Stephanie J. Neill, AI ürünlerinde güveni modeli daha akıllı yapmak yerine daha öngörülebilir/şeffaf hale getirerek kazanmayı öneriyor: yanıtları bir policy dosyasına dayandırma, kaynak gösterimini (citation) zorunlu kılma, her yanıta bir güven skoru ekleme ve %70'in altındaki skorları otomatik olarak insan incelemesine yönlendirme. PM ekipleri için AI özelliği tasarımını 'daha iyi model' yerine 'ölçülebilir güven kalıpları' etrafında kurmayı sağlayan doğrudan uygulanabilir bir çerçeve.",
-          "tags": [
-            { "label": "Yöntem", "color": "blue" },
-            { "label": "AI Ürün Tasarımı", "color": "green" },
-            { "label": "Trust & Safety", "color": "amber" }
-          ],
-          "has_detail": true,
-          "detail_slug": "stephanie-neill-stripe-ai-trust-framework"
-        },
-        {
-          "source": "Product School × Sun Park (AI Product Lead, Typeform) & Leigh Smith (Sr. Director of Research, Typeform)",
-          "date": "06.08.2026",
-          "score": 4,
-          "title": "AI Research to Decide What to Build Next in Hours, Not Weeks",
-          "url": "https://www.youtube.com/watch?v=xvnfkrCy1jQ",
-          "summary": "Typeform'un AI Product Lead'i Sun Park ve Araştırma Direktörü Leigh Smith, anket hızı ile mülakat derinliği arasındaki klasik trade-off'u ortadan kaldırmayı vaat eden Research Flow aracını canlı gösteriyor: gerçek zamanlı takip sorusu soran bir AI moderatörle bir çalışma kuruyorlar ve dakikalar içinde 37'den fazla tamamlanmış yanıt, sürekli güncellenen içgörü/duygu analizi/alıntı akışı elde ediyorlar. PM'ler için araştırma döngüsünü haftalardan saatlere indiren somut bir vendor/araç sinyali.",
-          "tags": [
-            { "label": "Araç", "color": "amber" },
-            { "label": "Kullanıcı Araştırması", "color": "green" }
-          ],
-          "has_detail": true,
-          "detail_slug": "sun-park-typeform-ai-research-flow"
-        },
-        {
-          "source": "Product School × Ben Haefele (CPO, Webflow)",
-          "date": "06.08.2026",
-          "score": 5,
-          "title": "Building Backwards: The New Rules of AI-Native Product Development",
-          "url": "https://www.youtube.com/watch?v=PbueggsSfG0",
-          "summary": "Webflow CPO'su Ben Haefele, ürün geliştirmeye spesifikasyondan değil çalışan koddan başlamayı öneriyor ve bunu \"Agile Manifesto'nun nihayet gerçekleşmiş en saf hali\" olarak tanımlıyor. Webflow'un bu yaklaşımı altı ay içinde nasıl operasyonelleştirdiğini anlatıyor: PM kariyer çerçevesini yeniden yapılandırma, şirket çapında haftalık \"Builder Days\" ve commit geçmişini analiz ederek PRD'yi geriye dönük üreten bir ajan. PM ekiplerinin roadmap/kariyer/süreç tasarımını doğrudan değiştirecek bir organizasyon modeli.",
-          "tags": [
-            { "label": "Yöntem", "color": "blue" },
-            { "label": "Organizasyon", "color": "green" }
-          ],
-          "has_detail": true,
-          "detail_slug": "ben-haefele-webflow-building-backwards"
-        },
-        {
-          "source": "Product School × Damir Dizdarević (Head of Product, Miro)",
-          "date": "05.08.2026",
-          "score": 4,
-          "title": "AI Multiplayer Collaboration Across the Product Lifecycle",
-          "url": "https://www.youtube.com/watch?v=YVafZodihik",
-          "summary": "Miro'da Head of Product Damir Dizdarević, 518 liderle yapılan bir Forrester araştırmasına dayanarak AI'ın ekip hizasızlığını neden büyüttüğünü anlatıyor: \"üretim ölçeklendi ama karar verme ölçeklenmedi\". Agentic canvas üzerinde iki iş akışını canlı kuruyor: dağınık geri bildirimi önceliklendirilmiş backlog + strateji dokümanı + prototip varyantlarına çeviren bir akış, ve dağınık Slack güncellemelerini tek bir durum raporunda birleştiren bir akış. PM ekiplerinin çok-kişili (multiplayer) çalışma alanını AI ile nasıl yapılandırabileceğine dair somut bir araç/vendor sinyali.",
-          "tags": [
-            { "label": "Araç", "color": "amber" },
-            { "label": "Ekip Hizalanması", "color": "green" }
-          ],
-          "has_detail": true,
-          "detail_slug": "damir-dizdarevic-miro-ai-multiplayer"
-        },
-        {
-          "source": "Product School × Axel Sooriah (PM & AI Evangelist, Atlassian)",
-          "date": "04.08.2026",
-          "score": 5,
-          "title": "AI-Assisted GTM for Product Teams",
-          "url": "https://www.youtube.com/watch?v=3o2C74iWez4",
-          "summary": "Atlassian'da PM & AI Evangelist olan Axel Sooriah, \"skill\" ile \"agent\" arasındaki farkı pratik bir çerçeveye dönüştürüyor ve Dia, Rovo, Cursor ile kendi gerçek iş akışlarını gösteriyor: gününü odaklayan bir sabah brifingi ve bir webinar-performans skill'ini talep üzerine çalışan bir Slack ajanına dönüştürmesi gibi örnekler. Asıl değer, AI'ın GTM çalışmasında nerede gerçekten değer kattığı ile nerede sadece ek iş yarattığı arasında karar vermeyi sağlayan somut bir ayrım kriteri sunması. PM'lerin kendi günlük GTM/otomasyon iş akışlarını tasarlarken doğrudan uygulayabileceği bir yöntem.",
-          "tags": [
-            { "label": "Yöntem", "color": "blue" },
-            { "label": "GTM", "color": "green" },
-            { "label": "Otomasyon", "color": "amber" }
-          ],
-          "has_detail": true,
-          "detail_slug": "axel-sooriah-atlassian-ai-gtm"
-        },
-        {
-          "source": "Product School × Samuel Spitz (Member of Technical Staff, Replit)",
-          "date": "03.08.2026",
-          "score": 5,
-          "title": "From Six Weeks to Same Day: The New PM Loop",
-          "url": "https://www.youtube.com/watch?v=7_m305SwdEc",
-          "summary": "Replit'ten Samuel Spitz, sahnede canlı olarak her PM'in ihtiyaç duyduğu üç çıktıyı üretiyor: bir sonraki PRD'nin yerini alan tıklanabilir bir prototip, ekibin araçlarına bağlı bir iç dashboard ve markalı, dışa aktarılabilir bir slayt destesi. Bunları tekrarlanabilir beş adımlı bir iş akışına ve kopyalanabilir üç promta indiriyor. Haftalarca süren 'spec yaz, tasarım bekle, mühendisliğe devret' döngüsünü aynı gün içinde çalışan bir prototip/dashboard/sunuma indiren, doğrudan uygulanabilir bir PM iş akışı.",
-          "tags": [
-            { "label": "Yöntem", "color": "blue" },
-            { "label": "Prototipleme", "color": "green" }
-          ],
-          "has_detail": true,
-          "detail_slug": "samuel-spitz-replit-pm-loop"
-        },
         {
           "source": "Parker Prompts",
           "date": "12.08.2026",
@@ -167,18 +75,32 @@
           "detail_slug": "nitin-sharma-notebooklm-claude-workflows"
         },
         {
-          "source": "AI With Ram × Ram",
-          "date": "06.08.2026",
+          "source": "rari's Substack × rari",
+          "date": "12.08.2026",
           "score": 3,
-          "title": "10 AI Prompts That Unlock 100% of AI's Potential",
-          "url": "https://growtechie.substack.com/p/10-ai-prompts-that-unlock-100-of",
-          "summary": "Ram, çıktı kalitesinin hangi AI modelinin seçildiğinden değil AI ile nasıl iletişim kurulduğundan belirlendiğini savunarak on genel prompting tekniği sıralıyor: uzman rolü atama, AI'a önce soru sordurma, seviyeye uygun kademeli açıklama, sistem düşüncesi, varsayımları sorgulatma, çoklu strateji karşılaştırma, yeniden kullanılabilir kişisel çerçeveler, öz-eleştiri isteme, hedef kitle perspektifinden yazdırma ve bir kritere ulaşana kadar kendi kendini düzelttirme. Araç-bağımsız, PM'in günlük stakeholder/araştırma promptlarına da uygulanabilecek genel bir prompting checklist'i; yeni veya PM'e özgü bir sistem sunmuyor.",
+          "title": "Graph Engineering: How to Build AI Agent Systems That Don't Break at Scale",
+          "url": "https://whrrari.substack.com/p/graph-engineering-how-to-build-ai",
+          "summary": "rari, AI ajan sistemlerinin doğrusal bir zincir yerine açık düğüm/kenar (graph) olarak tasarlanmasını öneriyor: her düğüme net bir girdi/çıktı sözleşmesi ve hata politikası (retry/fallback/escalate) tanımlamak, bağımsız işleri paralelleştirmek, üretici ile doğrulayıcı rolleri ayırmak ve döngüleri ölçülebilir bir yakınsama koşuluyla sınırlamak. PM'ler için doğrudan bir workflow değil, ancak bir AI ajan özelliğinin üretime hazır olup olmadığını değerlendirirken mühendislik ekibine sorulacak somut soruları (hata politikası ne, state nasıl izleniyor, topoloji maliyeti nasıl belirliyor) çıkaran teknik bir referans.",
           "tags": [
-            { "label": "Prompting", "color": "blue" },
-            { "label": "Genel Pratik", "color": "" }
+            { "label": "Mimari", "color": "" },
+            { "label": "AI Agent", "color": "amber" }
           ],
           "has_detail": true,
-          "detail_slug": "ai-with-ram-10-prompts-pm-versiyonu"
+          "detail_slug": "rari-graph-engineering-ai-agent-systems"
+        },
+        {
+          "source": "Technically Curious × Claire Morrison & Katie Fifer",
+          "date": "10.08.2026",
+          "score": 5,
+          "title": "Life /goals: Delegate Substantial Work to AI",
+          "url": "https://technicallycurious.substack.com/p/life-goals-delegate-substantial-work",
+          "summary": "Technically Curious'ta Claire Morrison ve Katie Fifer, bir AI ajanına saatler süren kapsamlı bir işi (ör. üç aylık planlama sunumu) devretmek için \"/goal\" adını verdikleri altı adımlı bir yöntem paylaşıyor: ortak bağlam kurma, bunu net bir brief'e dönüştürme, AI'ın kullanıcının gördüğünü (ör. tarayıcı render'ı) görebilmesini sağlama, hedefi birlikte taslaklama, uzaklaşıp AI'ın çalışmasına izin verme ve sonucu yineleme. Vurguladıkları temel fark, sürekli müdahale yerine sonuç/kaynak/doğrulama/durdurma koşullarını net tanımlayıp AI'ın kendi çıktısını insan gibi denetleyebilmesini sağlamak; PM'ler için birkaç saatlik araştırma/analiz/sunum gibi işleri AI'a güvenle devretmenin somut bir çerçevesi.",
+          "tags": [
+            { "label": "Yöntem", "color": "blue" },
+            { "label": "Delegasyon", "color": "green" }
+          ],
+          "has_detail": true,
+          "detail_slug": "claire-katie-technically-curious-goal-delegation"
         }
       ]
     }

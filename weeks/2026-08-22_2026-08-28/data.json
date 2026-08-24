@@ -2,94 +2,12 @@
   "week_label": "Hafta 4",
   "date_range_title": "22-28 Ağustos 2026",
   "date_range_pill": "Ağustos 2026 / Hafta 4",
-  "themes": [
-    "<strong>Chat kutusu, AI arayüzlerinin tavanı değil tabanı.</strong> OpenAI'de Head of Design olan Ian Silber, sohbet arayüzünün yapay zeka ürünlerinin nihai formu olmadığını; transkriptin şimdiden düzenlenebilir yazı blokları ve tıklanabilir takip sorularıyla, gelecekte ise bağlama duyarlı (context-aware) araçlarla evrildiğini anlatıyor — PM'ler için ürün arayüzünü sohbet kutusunun ötesinde tasarlamayı önceliklendiren bir bakış açısı.",
-    "<strong>Soru-cevap chatbot'u kurmak kolay; güvenilir bir ajan kurmak değil.</strong> Square/Block'ta Global Head of Product olan Willem Avé, genel müdürlük modelini terk edip DRI (Directly Responsible Individual) tabanlı işlevsel bir yapıya geçişi ve gerçek iş çıktısı üreten (soru-cevap değil) bir ajan olan \"manager bot\" örneğini anlatıyor — PM'ler için hem organizasyon tasarımına hem AI ajan tasarımına dair somut bir çerçeve.",
-    "<strong>Prompt engineering öldü, intent engineering önemli.</strong> Grace Clarke, tüm danışmanlık işini Claude ile yürütürken tek seferlik mükemmel promptlar yerine sürekli, konuşma tabanlı bir işbirliğini ve marka sesini koruyan versiyonlanmış \"skill\" dosyalarını öne çıkarıyor — PM'lerin kişisel AI kullanımını tek seferlik komutlardan kalıcı bir sisteme taşımasını öneren bir bakış açısı."
-  ],
+  "themes": [],
   "channels": [
-    {
-      "id": "youtube",
-      "name": "YouTube",
-      "cards": [
-        {
-          "source": "Lenny's Podcast × Ian Silber (Head of Design, OpenAI)",
-          "date": "16.08.2026",
-          "score": 5,
-          "title": "Chatbots Are Not the Final Interface: OpenAI's Head of Design on What's Next",
-          "url": "https://www.youtube.com/watch?v=BV0hy6NET-U",
-          "summary": "OpenAI'de Head of Design olan Ian Silber, metin tabanlı chat arayüzünün yapay zeka ürünlerinin nihai formu olmadığını; transkriptin şimdiden düzenlenebilir yazı blokları, tıklanabilir takip soruları ve görsel üretime özel araçlarla, gelecekte ise bağlama duyarlı (context-aware) affordance'larla evrildiğini anlatıyor. Ayrıca mühendislerin AI ile üretkenlikte büyük sıçrama yaparken tasarım ekiplerinin bunu henüz yakalayamadığını, insanın hâlâ kullanıcı anlayışı, icat ve bakış açısında öne çıktığını vurguluyor. PM'ler için AI ürün arayüzünü sohbet kutusunun ötesinde tasarlamayı ve karmaşıklığı azaltmayı ('just do less') önceliklendiren bir çerçeve.",
-          "tags": [
-            { "label": "Yöntem", "color": "blue" },
-            { "label": "AI Ürün Tasarımı", "color": "green" }
-          ],
-          "has_detail": true,
-          "detail_slug": "ian-silber-openai-chatbots-not-final-interface"
-        },
-        {
-          "source": "Product School × Willem Avé (Global Head of Product, Square/Block)",
-          "date": "19.08.2026",
-          "score": 5,
-          "title": "Square Global Head of Product on How to Build AI Agents People Actually Use",
-          "url": "https://www.youtube.com/watch?v=s0XqhUFhOjo",
-          "summary": "Square/Block'ta Global Head of Product olan Willem Avé, şirketin genel müdürlük modelini terk edip organizasyonları müşteri sonuçları etrafında odaklayan, tek bir DRI'ın (Directly Responsible Individual) çapraz-fonksiyonel yetkiye sahip olduğu işlevsel bir yapıya geçme kararını anlatıyor. \"Manager bot\" demosuyla, bir küçük işletme sahibinin envanter/işgücü/satış gibi gerçek işleri hafıza ve bağlantı yönetimiyle uğraşmadan bir ajana devredebildiğini gösteriyor; \"soru-cevap chatbot kurmak artık kolay, küçük bir işletmenin gerçekten güvenebileceği bir ajan kurmak değil\" vurgusuyla, PM'lerin AI ajan tasarımını demo etkileyiciliğinden gerçek iş çıktısına kaydırmasını öneriyor.",
-          "tags": [
-            { "label": "Yöntem", "color": "blue" },
-            { "label": "Organizasyon", "color": "green" },
-            { "label": "AI Agent", "color": "amber" }
-          ],
-          "has_detail": true,
-          "detail_slug": "willem-ave-square-ai-agents-people-actually-use"
-        },
-        {
-          "source": "How I AI × Grace Clarke",
-          "date": "07.08.2026",
-          "score": 5,
-          "title": "Claude Runs My Entire Business",
-          "url": "https://www.youtube.com/watch?v=o_eg2TtXAO0",
-          "summary": "AI öğretmeni ve eski pazarlama danışmanı Grace Clarke, tüm danışmanlık işini idari personel işe almadan Claude ile nasıl yürüttüğünü anlatıyor: saatlik çalışan bir \"pipeline operator\" ile kişiselleştirilmiş teklif/onboarding materyalleri üretip haftalık 20+ saatlik idari yükü ortadan kaldırıyor, Claude Cowork içinde kurduğu özel arayüzle bir aydır Gmail'i hiç açmadan e-postalarını yönetiyor. Temel prensibi \"prompt engineering öldü, asıl odaklanılması gereken intent engineering\" ve marka sesini korumak için versiyonlanmış \"skill\" dosyaları kullanmak; PM'ler/kurucular için önerisi, karmaşık otomasyonlara geçmeden önce günlük küçük bir zorlayıcı alışkanlıkla (ör. bir Slack hatırlatıcısıyla ekran görüntüsünü Claude'a atmak) AI ile çalışma refleksini oturtmak.",
-          "tags": [
-            { "label": "Yöntem", "color": "blue" },
-            { "label": "Otomasyon", "color": "amber" },
-            { "label": "Kişisel Prodüktivite", "color": "green" }
-          ],
-          "has_detail": true,
-          "detail_slug": "grace-clarke-how-i-ai-claude-runs-business"
-        }
-      ]
-    },
     {
       "id": "substack",
       "name": "Substack",
       "cards": [
-        {
-          "source": "rari's Substack × rari",
-          "date": "12.08.2026",
-          "score": 3,
-          "title": "Graph Engineering: How to Build AI Agent Systems That Don't Break at Scale",
-          "url": "https://whrrari.substack.com/p/graph-engineering-how-to-build-ai",
-          "summary": "rari, AI ajan sistemlerinin doğrusal bir zincir yerine açık düğüm/kenar (graph) olarak tasarlanmasını öneriyor: her düğüme net bir girdi/çıktı sözleşmesi ve hata politikası (retry/fallback/escalate) tanımlamak, bağımsız işleri paralelleştirmek, üretici ile doğrulayıcı rolleri ayırmak ve döngüleri ölçülebilir bir yakınsama koşuluyla sınırlamak. PM'ler için doğrudan bir workflow değil, ancak bir AI ajan özelliğinin üretime hazır olup olmadığını değerlendirirken mühendislik ekibine sorulacak somut soruları (hata politikası ne, state nasıl izleniyor, topoloji maliyeti nasıl belirliyor) çıkaran teknik bir referans.",
-          "tags": [
-            { "label": "Mimari", "color": "" },
-            { "label": "AI Agent", "color": "amber" }
-          ],
-          "has_detail": true,
-          "detail_slug": "rari-graph-engineering-ai-agent-systems"
-        },
-        {
-          "source": "Technically Curious × Claire Morrison & Katie Fifer",
-          "date": "10.08.2026",
-          "score": 5,
-          "title": "Life /goals: Delegate Substantial Work to AI",
-          "url": "https://technicallycurious.substack.com/p/life-goals-delegate-substantial-work",
-          "summary": "Technically Curious'ta Claire Morrison ve Katie Fifer, bir AI ajanına saatler süren kapsamlı bir işi (ör. üç aylık planlama sunumu) devretmek için \"/goal\" adını verdikleri altı adımlı bir yöntem paylaşıyor: ortak bağlam kurma, bunu net bir brief'e dönüştürme, AI'ın kullanıcının gördüğünü (ör. tarayıcı render'ı) görebilmesini sağlama, hedefi birlikte taslaklama, uzaklaşıp AI'ın çalışmasına izin verme ve sonucu yineleme. Vurguladıkları temel fark, sürekli müdahale yerine sonuç/kaynak/doğrulama/durdurma koşullarını net tanımlayıp AI'ın kendi çıktısını insan gibi denetleyebilmesini sağlamak; PM'ler için birkaç saatlik araştırma/analiz/sunum gibi işleri AI'a güvenle devretmenin somut bir çerçevesi.",
-          "tags": [
-            { "label": "Yöntem", "color": "blue" },
-            { "label": "Delegasyon", "color": "green" }
-          ],
-          "has_detail": true,
-          "detail_slug": "claire-katie-technically-curious-goal-delegation"
-        },
         {
           "source": "Leadership in Change × Nir Eyal",
           "date": "24.08.2026",
