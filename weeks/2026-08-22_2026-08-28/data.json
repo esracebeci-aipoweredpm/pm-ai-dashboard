@@ -89,6 +89,20 @@
           ],
           "has_detail": true,
           "detail_slug": "claire-katie-technically-curious-goal-delegation"
+        },
+        {
+          "source": "Leadership in Change × Nir Eyal",
+          "date": "24.08.2026",
+          "score": 3,
+          "title": "AI Is the New Email: Nir Eyal on Hidden Distraction",
+          "url": "https://leadershipinchange.com/p/ai-is-the-new-email-nir-eyal",
+          "summary": "Indistractable yazarı Nir Eyal, AI'ın e-posta gibi gizli bir dikkat dağıtıcı haline geldiğini savunuyor: e-postadan farklı olarak AI somut bir çıktı ürettiği için 'ürünlü kaçış' davranışını meşrulaştırıyor ve teslim edilen değer konusunda yanılsama yaratabiliyor. Dikkat dağınıklığının çoğunun dış bildirimlerden değil iç tetikleyicilerden (kaygı, sıkılma) kaynaklandığını, bu yüzden to-do listeleri yerine zaman bloklama öneriyor. PM'ler için hem ekiplerin AI ile 'çalışıyormuş gibi görünen' ama gerçek iş çıktısı üretmeyen davranışlarını fark etme hem de kendi zaman yönetimini gözden geçirme çağrısı.",
+          "tags": [
+            { "label": "Prodüktivite", "color": "amber" },
+            { "label": "Davranış", "color": "" }
+          ],
+          "has_detail": false,
+          "no_detail_note": "kişisel prodüktivite perspektifi"
         }
       ]
     }
