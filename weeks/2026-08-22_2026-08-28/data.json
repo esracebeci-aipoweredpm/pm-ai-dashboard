@@ -101,8 +101,8 @@
             { "label": "Prodüktivite", "color": "amber" },
             { "label": "Davranış", "color": "" }
           ],
-          "has_detail": false,
-          "no_detail_note": "kişisel prodüktivite perspektifi"
+          "has_detail": true,
+          "detail_slug": "nir-eyal-ai-new-email-hidden-distraction"
         }
       ]
     }
