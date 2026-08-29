@@ -46,6 +46,23 @@
           "has_detail": true,
           "detail_slug": "srini-raghavan-product-builder-ai-pdlc",
           "no_detail_note": null
+        },
+        {
+          "source": "Product School × Elaina O'Mahoney",
+          "date": "26.08.2026",
+          "score": 5,
+          "title": "Mural CPO on Why AI Made Work Lonelier, Not Better",
+          "url": "https://www.youtube.com/watch?v=s1IrfTy1Im4",
+          "url_label": "",
+          "summary": "Mural CPO'su Elaina O'Mahoney, AI'ın fikir üretmeyi ucuzlaştırdığını ama ekipleri yalnız çalışmaya ittiğini savunuyor: asıl kıt kaynak artık yaratıcılık değil, ekibin paylaştığı bağlam (shared context) — kim nereden başladı, bir karara nasıl varıldı. Ürün liderlerine beş sayfalık stratejik dokümanlar yerine prototip/diyagram paylaşmayı, sevkiyatı değil öğrenmeyi ölçmeyi ve departmanlardaki 'gönüllü dönüştürücüleri' danışman olarak görevlendirmeyi öneriyor.",
+          "tags": [
+            { "label": "Shared Context", "color": "blue" },
+            { "label": "Liderlik", "color": "amber" },
+            { "label": "Ölçüm", "color": "" }
+          ],
+          "has_detail": true,
+          "detail_slug": "elaina-omahoney-mural-ai-shared-context",
+          "no_detail_note": null
         }
       ]
     }
