@@ -1,0 +1,33 @@
+{
+  "week_label": "Hafta 5",
+  "date_range_title": "29 Ağustos - 4 Eylül 2026",
+  "date_range_pill": "Ağustos-Eylül 2026 / Hafta 5",
+  "themes": [
+    "<strong>Product Builder rolü.</strong> AI, PM-tasarım-mühendislik arasındaki lineer handoff'ları ortadan kaldırıp rolleri tek bir 'product builder' rolünde birleştiriyor; Freshworks örneğinde PM-mühendis oranı 1:20'den 1:1'e düşmüş."
+  ],
+  "channels": [
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "cards": [
+        {
+          "source": "Product Growth × Srini Raghavan",
+          "date": "24.08.2026",
+          "score": 5,
+          "title": "The Product Builder Playbook (Full Breakdown)",
+          "url": "https://www.youtube.com/watch?v=0qNZVlW8IR4",
+          "url_label": "",
+          "summary": "Freshworks CPO'su Srini Raghavan, AI ile PM-tasarım-mühendislik arasındaki lineer handoff'ların ortadan kalkacağını ve tek kişinin araştırma-tasarım-geliştirmeyi birlikte yürüttüğü 'product builder' rolüne geçileceğini savunuyor. Freshworks'te kurdukları 12 aşamalı AI PDLC (AI Product Development Life Cycle) sistemi sayesinde PM-mühendis oranı 1:20'den 1:1'e düşmüş, geliştirme döngüsü 6 aydan 2 haftaya inmiş.",
+          "tags": [
+            { "label": "AI PDLC", "color": "blue" },
+            { "label": "Rol Dönüşümü", "color": "amber" },
+            { "label": "Organizasyon", "color": "green" }
+          ],
+          "has_detail": true,
+          "detail_slug": "srini-raghavan-product-builder-ai-pdlc",
+          "no_detail_note": null
+        }
+      ]
+    }
+  ]
+}

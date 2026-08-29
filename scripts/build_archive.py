@@ -18,6 +18,8 @@ import sys
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
+sys.stdout.reconfigure(encoding="utf-8")
+
 ROOT = Path(__file__).resolve().parent.parent
 
 TURKISH_MONTHS = [
