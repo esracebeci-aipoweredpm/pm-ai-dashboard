@@ -3,7 +3,8 @@
   "date_range_title": "29 Ağustos - 4 Eylül 2026",
   "date_range_pill": "Ağustos-Eylül 2026 / Hafta 5",
   "themes": [
-    "<strong>Rowing'den steering'e.</strong> AI yürütmeyi (rowing) devraldıkça PM'in değeri git gide insan yargısına, hırsa (ambition) ve yönlendirmeye (steering) kayıyor; hem bireysel AI alışkanlıklarında hem de rol tanımında bu kayış öne çıkan ortak nokta."
+    "<strong>Rowing'den steering'e.</strong> AI yürütmeyi (rowing) devraldıkça PM'in değeri git gide insan yargısına, hırsa (ambition) ve yönlendirmeye (steering) kayıyor; hem bireysel AI alışkanlıklarında hem de rol tanımında bu kayış öne çıkan ortak nokta.",
+    "<strong>Kişisel AI işletim sistemi.</strong> Hem Karpathy'nin hem Daniel Blum'un anlattığı pratikler, tek seferlik promptlardan kalıcı hafıza/bağlam, kendi kendini geliştiren döngüler ve devredilen görevlerden oluşan kişisel bir 'AI işletim sistemi' kurmaya işaret ediyor."
   ],
   "channels": [
     {
@@ -42,6 +43,23 @@
           ],
           "has_detail": true,
           "detail_slug": "tara-seshan-ai-third-era-rowing-to-steering",
+          "no_detail_note": null
+        },
+        {
+          "source": "How I AI with Claire Vo × Daniel Blum",
+          "date": "31.08.2026",
+          "score": 5,
+          "title": "How This Product Manager Uses Claude Cowork to Run His Entire Week",
+          "url": "https://www.youtube.com/watch?v=p2qmX6TM0kw",
+          "url_label": "",
+          "summary": "Melio'da (B2B ödeme şirketi) PM olan Daniel Blum, bir yıldır geliştirdiği Claude Cowork tabanlı kişisel prodüktivite sistemini anlatıyor: Notion panosunu kendisinin dokunmadığı, Claude'un yönettiği 'salt okunur' bir arayüze dönüştürmüş; Pazar sabahı haftalık hazırlığı otomatik dolduruyor; günlük 'morning brief' bilmediği şirket terimlerini kendisine sorup kaydediyor; kendi taslak düzeltmelerinden ton öğrenen ve tekrar eden işleri 'skill'e dönüştürmeyi öneren bir kendi kendini geliştirme döngüsü var. Bu kişisel sistemi 'Workstation' adlı bir onboarding skill'iyle tüm Melio PM'lerine ~15 dakikada kurulabilir hale getirmiş.",
+          "tags": [
+            { "label": "Personal AI System", "color": "blue" },
+            { "label": "Automation", "color": "amber" },
+            { "label": "Claude Cowork", "color": "" }
+          ],
+          "has_detail": true,
+          "detail_slug": "daniel-blum-claude-cowork-pm-system",
           "no_detail_note": null
         }
       ]
