@@ -1,0 +1,31 @@
+{
+  "week_label": "Hafta 5",
+  "date_range_title": "29 Ağustos - 4 Eylül 2026",
+  "date_range_pill": "Ağustos-Eylül 2026 / Hafta 5",
+  "themes": [],
+  "channels": [
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "cards": [
+        {
+          "source": "Parker Prompts",
+          "date": "30.08.2026",
+          "score": 5,
+          "title": "How Andrej Karpathy ACTUALLY Uses AI (10x Faster)",
+          "url": "https://www.youtube.com/watch?v=rAk1wGn0hXs",
+          "url_label": "",
+          "summary": "Video, Karpathy'nin herkesle aynı araçlara erişimi olmasına rağmen yedi disiplinli alışkanlık sayesinde çok daha hızlı çalıştığını savunuyor: yazmak yerine sesli prompting, kendi dokümanlarından beslenen bir 'LLM wiki' kurma, NotebookLM ile dokümanı okumak yerine sorgulama, AI'a görüş sormak yerine veri analisti gibi ham veri çektirme, Claude'da yaşayan bir kalıcı hafıza dosyası tutma, mikro görevler yerine büyük işleri bütün olarak delege etme ve tek ajan yerine paralel/orkestre edilmiş ajan ekipleri çalıştırma. PM'ler için asıl fark, araç değil kişisel bir AI çalışma sistemi kurmak.",
+          "tags": [
+            { "label": "Prompting", "color": "blue" },
+            { "label": "Persistent Memory", "color": "amber" },
+            { "label": "Agent Orchestration", "color": "" }
+          ],
+          "has_detail": true,
+          "detail_slug": "karpathy-7-ai-habits-parker-prompts",
+          "no_detail_note": null
+        }
+      ]
+    }
+  ]
+}

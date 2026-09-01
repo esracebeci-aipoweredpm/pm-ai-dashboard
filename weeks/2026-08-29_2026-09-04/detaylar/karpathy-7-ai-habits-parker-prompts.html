@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>How Andrej Karpathy ACTUALLY Uses AI | PM Özeti</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">Parker Prompts · 30 Ağustos 2026</div>
+  <h1>Karpathy'nin AI Kullanım Alışkanlıkları: Araç Değil, <em>Kişisel Sistem</em></h1>
+  <p class="meta">Kaynak: <a href="https://www.youtube.com/watch?v=rAk1wGn0hXs" target="_blank">youtube.com/watch?v=rAk1wGn0hXs</a></p>
+</header>
+<nav>
+  <div class="nav-chip active" onclick="showSection('ozet', this)">İçerik Özeti</div>
+  <div class="nav-chip" onclick="showSection('anahtar', this)">Anahtar Noktalar</div>
+  <div class="nav-chip" onclick="showSection('senaryo', this)">Kullanım Senaryoları</div>
+</nav>
+<main>
+
+<section id="ozet" class="active">
+  <div class="section-title">İçerik <span>Özeti</span></div>
+  <div class="summary-box">
+    <h3>Temel Argüman</h3>
+    <p>Karpathy, herkesle aynı chatbot'lara erişimi olmasına rağmen çok daha hızlı sonuç alıyor. Video, bunun sebebinin araç değil yedi disiplinli alışkanlık olduğunu savunuyor: mükemmel yazılı prompt yerine sesli "dump", kendi dokümanlarından beslenen bir kişisel kütüphane ("LLM wiki"), dokümanı okumak yerine sorgulamak, görüş sormak yerine veri analisti gibi ham veri çektirmek, kalıcı/yaşayan bir hafıza dosyası tutmak, mikro görevler yerine büyük işleri bütün olarak delege etmek ve tek ajan yerine paralel/orkestre edilmiş ajan ekipleri çalıştırmak.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Yedi alışkanlık, kısaca</div>
+    <p>1) Yazmak yerine konuşarak prompt vermek (yazmaktan ~3 kat hızlı); 2) AI'a genel internet yerine kendi PDF/dokümanlarından cevap verdirmek ("LLM wiki"); 3) NotebookLM'e doküman yükleyip soru-cevapla sorgulamak; 4) AI'a görüş sormak yerine ham veri çektirip (ör. resmi istatistik kurumundan) kendi analizini yaptırmak; 5) Claude'da konuşmalar ilerledikçe kendini güncelleyen kalıcı bir hafıza klasörü/dosyası tutmak; 6) tek bir e-posta veya başlık yerine tüm bir özelliği/araştırmayı tek seferde delege etmek; 7) birden fazla ajanı aynı anda, gerekirse bir ajanın diğerlerini yönettiği bir "orkestrasyon" içinde paralel çalıştırmak.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">PM için asıl çıkarım</div>
+    <p>Fark yaratan model veya araç değil, AI ile çalışma biçiminin sistemli olması. Sesli düşünmek, kendi bağlamını AI'ya kalıcı olarak öğretmek ve görevleri küçük parçalar yerine bütün olarak delege etmek; PM'in de günlük AI kullanımını tek seferlik promptlardan tekrarlanabilir bir kişisel sisteme taşımasını sağlayabilir.</p>
+  </div>
+</section>
+
+<section id="anahtar">
+  <div class="section-title">Anahtar Noktalar — <span>Neden / Sonuç</span></div>
+  <div class="ce-block">
+    <div class="ce-title">1. Mükemmel yazılı prompt yerine sesli "dump"</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Karpathy kelimeleri özenle seçip yazmak yerine bir speech-to-text aracıyla (Claude'un dahili mikrofonu yerine 30 saniyede kesilmeyen üçüncü parti bir uygulama olan Super Whisper ile) aklındaki her şeyi olduğu gibi döküyor; konuşmak yazmaktan yaklaşık üç kat hızlı.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Modern modeller dağınık bir açıklamadan bile gereken detayı çıkarabildiği için kalite kaybı olmuyor; PM'ler de spec/PRD taslağını yazmadan önce sesli anlatarak ilk taslağı çok daha hızlı çıkarabilir.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">2. "LLM wiki": AI'a genel internet yerine kendi dokümanından cevap verdirmek</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>AI kendinden emin ama yanlış cevaplar verebiliyor ve bunu fark edemiyor; kendi dokümanı yüklenmezse internetteki genel/vasat bilgiye dayanıyor. Karpathy bu yüzden ilgili PDF/dokümanları doğrudan sohbete yüklüyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>PM'ler rapor, araştırma veya PRD gibi kendi kaynaklarını yükleyerek AI'ın cevabını somut belgeye dayandırabilir; bu, büyük bir rapor ya da araştırma projesinde de aynı şekilde işliyor.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">3. Dokümanı okumak yerine sorgulamak (NotebookLM)</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Uzun bir raporu okuyup "öğrendiğini" sanmak, uygulamaya geçince yetersiz kalabiliyor; Karpathy bunun yerine dokümanları NotebookLM'e yükleyip soru sorarak öğreniyor — soru-cevap, pasif okumadan daha kalıcı öğrenme sağlıyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>PM'ler pazar araştırması veya uzun teknik dokümanları NotebookLM'e yükleyip soru sorarak, üstelik otomatik mind map ve flashcard gibi özelliklerle daha hızlı ve kalıcı şekilde özümseyebilir.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">4. AI'a görüş sordurmak yerine veri analisti gibi düşünmek</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Karpathy, "hangi işler AI'dan en çok etkilenecek" gibi bir soruda haber/görüşlere güvenmek yerine AI'a doğrudan resmi istatistik kurumunun (Bureau of Labor Statistics) verisini çektirip tam bir tablo/spreadsheet üretmesini istiyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>PM'ler pazar/kullanıcı sorularında AI'ın öznel yorumunu almak yerine, AI'a ilgili ham veriyi (kullanım metrikleri, resmi istatistik, log verisi) çektirip tablo/grafiğe döktürerek daha objektif bir temelde karar verebilir.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">5. Her yeni sohbette bağlamı yeniden anlatmak yerine yaşayan bir hafıza</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Karpathy, Claude Projects içinde konuşmalar ilerledikçe AI'ın kendisinin dosya ekleyip güncellediği tek bir klasör (düz metin dosyaları + bir claude.md talimat dosyası) kuruyor; bu klasör her yeni sohbette otomatik okunuyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>PM'ler proje bağlamını, kararları ve tercihleri tek bir "yaşayan" dosya setinde tutarak her yeni sohbeti sıfırdan bağlam anlatmadan başlatabilir — ek bir araç değil, sadece mevcut Claude aboneliği yeterli.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">6. Mikro görevleri değil, büyük işleri bütün olarak delege etmek</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Çoğu kullanıcı AI'ı tek bir e-posta, başlık veya kod kontrolü gibi küçük görevlerde kullanıyor; Karpathy ise kodlamada olduğu gibi tüm bir özelliği veya araştırmayı tek seferde ajana devrediyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>AI, küçük bir boşluğu doldurmak yerine projenin tamamını düşünmek zorunda kalıyor; PM'ler de tek bir görevi parçalara bölüp sırayla vermek yerine bütün bir işi (ör. bir özelliğin tüm PRD'si) tek seferde delege etmeyi deneyebilir.</div>
+    </div>
+  </div>
+  <div class="ce-block">
+    <div class="ce-title">7. Tek ajan yerine paralel/orkestre edilmiş ajan ekipleri</div>
+    <div class="ce-row">
+      <div class="ce-cause"><div class="label cause">Neden</div>Karpathy, tek bir büyük görevi tek ajana vermek yerine aynı anda birden fazla Claude ajanını farklı işlerde çalıştırıyor — basit yöntemde birkaç ayrı sohbet açılıyor, ileri yöntemde ise bir ajan Claude skills ile diğer alt ajanları yöneten bir orkestrasyon kuruluyor.</div>
+      <div class="ce-arrow">→</div>
+      <div class="ce-effect"><div class="label effect">Sonuç</div>Önceki alışkanlıklar (kalıcı hafıza, LLM wiki) sayesinde her ajan zaten proje bağlamına sahip olduğundan, PM'ler birbirinden bağımsız birkaç alt görevi (rakip analizi, geri bildirim özeti, taslak metin) paralel ajanlara vererek toplam süreyi kısaltabilir.</div>
+    </div>
+  </div>
+</section>
+
+<section id="senaryo">
+  <div class="section-title">Kullanım <span>Senaryoları</span></div>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 24px;">PM ekiplerinin Karpathy'nin alışkanlıklarından ilham alarak kendi AI kullanımlarında deneyebileceği dört somut adım.</p>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">1. Sesli "dump" ile ilk taslağı hızlandırmak</div>
+    <p>Bir toplantı sonrası özellik fikrini doğrudan yazmaya çalışmak yerine bir dikte/speech-to-text aracıyla aklındaki her şeyi olduğu gibi anlatıp, bu dökümü AI'a ilk taslak PRD veya toplantı özetine dönüştürtmek.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Uzun ve kesintisiz kayıt yapabilen bir dikte aracı (dahili mikrofon özellikleri kısa sürelerle sınırlı olabiliyor).</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">2. Kendi dokümanlarından beslenen bir "LLM wiki" kurmak</div>
+    <p>Ürünle ilgili PRD'leri, geçmiş kararları ve terminolojiyi içeren dokümanları AI sohbetine yükleyip cevapların genel internet bilgisi yerine bu kaynaklara dayanmasını sağlamak.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Yüklenecek dokümanların güncel ve gizlilik açısından paylaşılabilir olması.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">3. Uzun raporları okumak yerine NotebookLM'de sorgulamak</div>
+    <p>Pazar araştırması, kullanıcı görüşme dökümü gibi uzun dokümanları NotebookLM'e yükleyip önce serbest sorularla sorgulamak, ardından otomatik mind map/flashcard çıktısıyla ekiple paylaşmak.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Dokümanın üçüncü parti bir araca yüklenebilir olması ve veri paylaşım kısıtlarının önceden kontrol edilmesi.</div>
+  </div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">4. Kalıcı hafıza + paralel ajanlarla bir haftalık analizi bölmek</div>
+    <p>Önce proje bağlamını yaşayan bir hafıza dosyasında tutup, ardından rakip taraması, kullanıcı geri bildirim özeti ve ilk taslak metin gibi bağımsız alt görevleri tek bir sohbette sırayla değil, ayrı ajanlarda paralel başlatıp sonuçları birleştirmek.</p>
+    <div class="insight" style="margin-top: 10px;"><strong>Önkoşul:</strong> Her alt görev için net ve birbirinden bağımsız çalışabilecek şekilde tanımlanmış bir prompt.</div>
+  </div>
+</section>
+
+</main>
+<script src="../../../assets/script.js"></script>
+</body>
+</html>
