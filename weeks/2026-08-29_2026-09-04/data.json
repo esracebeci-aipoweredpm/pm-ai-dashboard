@@ -2,7 +2,9 @@
   "week_label": "Hafta 5",
   "date_range_title": "29 Ağustos - 4 Eylül 2026",
   "date_range_pill": "Ağustos-Eylül 2026 / Hafta 5",
-  "themes": [],
+  "themes": [
+    "<strong>Rowing'den steering'e.</strong> AI yürütmeyi (rowing) devraldıkça PM'in değeri git gide insan yargısına, hırsa (ambition) ve yönlendirmeye (steering) kayıyor; hem bireysel AI alışkanlıklarında hem de rol tanımında bu kayış öne çıkan ortak nokta."
+  ],
   "channels": [
     {
       "id": "youtube",
@@ -23,6 +25,23 @@
           ],
           "has_detail": true,
           "detail_slug": "karpathy-7-ai-habits-parker-prompts",
+          "no_detail_note": null
+        },
+        {
+          "source": "Lenny's Podcast × Tara Seshan",
+          "date": "30.08.2026",
+          "score": 5,
+          "title": "AI's Third Era: The Rise of Persistent AI Coworkers",
+          "url": "https://www.youtube.com/watch?v=zMvBMfj4cSQ",
+          "url_label": "",
+          "summary": "OpenAI'da ChatGPT Work ve Codex ürün liderliğini yapan, daha önce Stripe'ın ilk beş PM'inden biri olan Tara Seshan, Lenny'e AI ürünlerinin üçüncü çağının (chat → ajanlarla çalışma → kalıcı 'iş arkadaşı' ajanlar) PM işini nasıl değiştirdiğini anlatıyor: yürütme ('rowing') AI'a kaydıkça insanın değeri yön belirlemeye ('steering') kayıyor, hırs (ambition) yeni darboğaz haline geliyor, ürünler mevcut değil 2-3 ay sonraki model yeteneklerine göre inşa ediliyor. En somut kısım: 'yazmayı düşünmek' için asla AI kullanmadığını ama 'yazmayı raporlamak' içinse sonuna kadar kullandığını, artık ekibi uzun dokümanla değil prototip/sonuçla ('mocks not docs') ikna ettiğini anlatıyor.",
+          "tags": [
+            { "label": "PM Role", "color": "blue" },
+            { "label": "Product Strategy", "color": "amber" },
+            { "label": "OpenAI", "color": "" }
+          ],
+          "has_detail": true,
+          "detail_slug": "tara-seshan-ai-third-era-rowing-to-steering",
           "no_detail_note": null
         }
       ]
